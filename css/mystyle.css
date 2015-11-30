@@ -1,0 +1,47 @@
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px;
+  borde-bottom: 1px ridge;
+  min-height: 400px;
+}
+.carousel {
+  
+    background: -webkit-linear-gradient(left, #78286B 30%, #D7483F);
+    background: -moz-linear-gradient(left, #78286B 30%, #D7483F);
+    background: linear-gradient(left, #78286B 30%, #D7483F);
+}
+.carousel .item {
+  min-height: 300px;
+}
+.schoolCarousel .item img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80%;
+}
+body {
+  align: center;
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+
+.navbar-inverse{
+    background: #78286B;
+}
+
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #afafaf;
+}
+
+#outer-row{
+    border-right: 1px ridge;
+}
+td, th{
+    text-align: center;
+}
