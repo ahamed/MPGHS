@@ -12,10 +12,11 @@
   
     background: -webkit-linear-gradient(left, #78286B 30%, #D7483F);
     background: -moz-linear-gradient(left, #78286B 30%, #D7483F);
+    background: -o-linear-gradient(left, #78286B 30%, #D7483F);
     background: linear-gradient(left, #78286B 30%, #D7483F);
 }
 .carousel .item {
-  min-height: 300px;
+  min-height: 400px;
 }
 .schoolCarousel .item img {
   position: absolute;
@@ -40,8 +41,43 @@ body {
 }
 
 #outer-row{
-    border-right: 1px ridge;
+    border-right: 1px solid #ddd;
 }
 td, th{
     text-align: center;
+}
+
+.indicator-color1,.indicator-color2,.indicator-color3{
+    
+    width: 20px;
+    height: 20px;
+}
+.indicator-color1{
+    background: blue;
+    border-radius: 60%;
+}
+.indicator-color2{
+    background: red;
+    border-radius: 60%;
+}
+.indicator-color3{
+    background:yellow;
+    border-radius: 60%;
+}
+
+canvas{
+    width: 100%;
+    height: 400px;
+}
+.tab-area{
+    height: 400px;
+}
+.tab-pane{
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding : 10px;
+}
+.affix{
+    top :60px;
 }

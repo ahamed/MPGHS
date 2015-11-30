@@ -3,7 +3,7 @@
             <div class="col-sm-12 col-xs-12">
                 <div class="carousel slide" id="schoolCarousel" data-ride="carousel">
                     <!--carousel indicator-->
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators" style="border-top: 1px solid #ddd; padding: 5px;">
                         <li class="active" data-slide-to="0" data-target="#schoolCarousel"></li>
                         <li class="" data-slide-to="1" data-target="#schoolCarousel"></li>
                         <li class="" data-slide-to="2" data-target="#schoolCarousel"></li>
