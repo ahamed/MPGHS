@@ -40,7 +40,7 @@
                                 <div class="media-body">
                                     <h2 class="media-heading">History</h2>
                                     <p style="padding: 5px;"></p>
-                                    <p>The university has a history that started in 1858 when Dhaka Brahma School was founded in 1858 by Dinanath Sen, Prabhaticharan Roy, Anathbandhu Mallik and Brajasundar Kaitra. The name Jagannath school was given by Kishorilal Chowdhury, the Zamindar of Baliati in Manikganj, who took over the school in 1872 and renamed it after his father. In 1884, it was raised to a second grade college. Law was one of the first courses introduced. A common management committee administered the school and college until 1887, when the school section was separated to form the independent Kishore Jubilee School. It is now known as K L Jubilee School. The administration of the college was transferred to a board of trustees in 1907. In the following year, it became a first grade college.
+                                    <p style="margin-left: 20px;">The university has a history that started in 1858 when Dhaka Brahma School was founded in 1858 by Dinanath Sen, Prabhaticharan Roy, Anathbandhu Mallik and Brajasundar Kaitra. The name Jagannath school was given by Kishorilal Chowdhury, the Zamindar of Baliati in Manikganj, who took over the school in 1872 and renamed it after his father. In 1884, it was raised to a second grade college. Law was one of the first courses introduced. A common management committee administered the school and college until 1887, when the school section was separated to form the independent Kishore Jubilee School. It is now known as K L Jubilee School. The administration of the college was transferred to a board of trustees in 1907. In the following year, it became a first grade college.
 
 The college started with 48 students and in five years, the roll raised to 396. In 1910, Raja Manmath Roy Chowdhury, the zamindar of Santosh, Tangail, affiliated the Pramath-Manmath College of Tangail with Jagannath College. With the establishment of University of Dhaka in 1921, it stopped admission to degree courses and was renamed Jagannath Intermediate College. This status was changed after 28 years in 1949, when it reopened degree classes. The college was taken over by the government in 1968.
 
@@ -59,7 +59,7 @@ It was transformed into Jagannath University in 2005 by passing a bill named Jag
                     <div class="row row-content" id="achivements">
                         
                         <div class="col-xs-12 col-sm-12">
-                            <h1 class="media-heading media-object">Achivements</h1>
+                            <h1 class="media-heading media-object">Annual Statistics</h1>
                             <p style="padding: 5px"></p>
                             <ul class="nav nav-tabs" role="tablists">
                                  <li role="presentation" class="active">
@@ -92,7 +92,7 @@ It was transformed into Jagannath University in 2005 by passing a bill named Jag
 
                                         ?>
                                          <tr class="danger">
-                                                <th>&nbsp;</th>
+                                                <th>Year</th>
                                         
                                         <?php 
                                              $inc = 0;
@@ -222,7 +222,7 @@ It was transformed into Jagannath University in 2005 by passing a bill named Jag
                                     <div class="media-object indicator-color1"></div>
                                 </div>
                                 <div class="media-body">
-                                    <h2 class="media-headding">Pass %</h2>
+                                    <h4 class="media-headding">Pass %</h4>
                                     
                                 </div>
                                 <br>
@@ -230,14 +230,14 @@ It was transformed into Jagannath University in 2005 by passing a bill named Jag
                                     <div class="media-object indicator-color2"></div>
                                 </div>
                                 <div class="media-body">
-                                    <h2 class="media-headding">A+</h2>
+                                    <h4 class="media-headding">A+</h4>
                                 </div>
                                 <br>
                                 <div class="media media-left media-middle">
                                     <div class="media-object indicator-color3"></div>
                                 </div>
                                 <div class="media-body">
-                                    <h2 class="media-headding">Golden A+</h2>
+                                    <h4 class="media-headding">Golden A+</h4>
                                 </div>
                             </div>
                         </div>
@@ -253,17 +253,104 @@ It was transformed into Jagannath University in 2005 by passing a bill named Jag
                     </div><!-- end of nav tab of table and graph row-->
                     
                     
+                    
+                    <div class="row row-content" id="uniform">
+                        
+                        <div class="col-sm-12 col-xs-12">
+                            <div class="media">
+                            <div class="media media-left media-middle">
+                            
+                            </div>
+                            <div class="media-body">
+                                <h1 class="media-heading">Uniform</h1>
+                                <div class="row row-content">
+                                    <div class="col-sm-6 col-xs-12 boys">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <img src="images/boys.jpeg" alt="boys uniform" class="img-responsive img-thumbnail media-object" width="200" height="400">
+                                            </div>
+                                            <div class="media-body">
+                                                <h4 class="media-heading">Boys</h4>
+                                                <ul>
+                                                    <li>White Shirt</li>
+                                                    <li>Yellow Pant</li>
+                                                    <li>White Cads</li>
+                                                </ul>
+                                            </div><!-- end boys uniform media body-->
+                                        </div>
+                                    </div><!-- end boys uniform part-->
+
+                                    <div class="col-sm-6 col-xs-12 girls">
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <img src="images/girls.jpg" alt="girls uniform" class="img-responsive img-thumbnail media-object" width="200" height="400">
+                                            </div>
+                                            <div class="media-body" style="list-style-type:square">
+                                                <h4 class="media-heading">Girls</h4>
+                                                <ul>
+                                                    <li>Green Frock</li>
+                                                    <li>white Pajama</li>
+                                                    <li>white Orna</li>
+                                                    <li>white Belt</li>
+                                                    <li>White Cads</li>
+                                                </ul>
+                                            </div><!-- end girls uniform media body-->
+                                        </div>
+                                    </div><!-- end girls uniform part-->
+                                </div>
+                                
+                            </div>
+                        </div>
+                        </div><!-- end col-sm-12 for uniform-->
+                        
+                        
+                    </div><!-- end uniform row-->
+                    
+                    <!-- start location div-->
+                    
+                    <div class="row row-content" id="location">
+                        <h1 class="media-heading">Address and Location</h1> 
+                        
+                        <div class="col-sm-4 col-xs-12 col-sm-offset-1" style="padding: 20px;">
+                               
+                            <div class="media">
+                                <div class="media-body">
+                                    <address>
+                                      Station road<br>
+                                      Mohangonj Upozilla, Mohangonj<br>
+                                      Netrakona, Bangladesh<br>
+                                      <i class="fa fa-phone"></i>: +852 1234 5678<br>
+                                      <i class="fa fa-fax"></i>: +852 8765 4321<br>
+                                      <i class="fa fa-envelope"></i>: 
+                                        <a href="mailto:mpghs@scl.gov">mpghs@scl.gov</a>
+                                   </address>
+                                </div>
+                            </div>
+                            
+                        </div><!-- end address -->
+                        <div class="col-sm-8 col-xs-12">
+                            <div class="container">
+                                <div id="map-container" width="600" height="400">
+                                    
+                                </div>
+                            </div>
+                        </div><!-- end location map-->
+                    </div><!-- end row of location-->
                   
                     
                     
-                </div>
+                </div><!-- end outer col-sm-8-->
+                
+                
                 
                 
                 <div class="col-xs-2 col-sm-2">
                 <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
                     <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
                         <li><a href="#history">History</a></li>
-                        <li><a href="#achivements">Achivements</a></li>
+                        <li><a href="#achivements">Annual Report</a></li>
+                        <li><a href="#uniform">Uniform</a></li>
+                        <li><a href="#location">Location</a></li>
                         
                     </ul>
                 </nav>
@@ -280,6 +367,30 @@ It was transformed into Jagannath University in 2005 by passing a bill named Jag
         <script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="bower_components/jquery/dist/chart.min.js"></script>
         <script type="text/javascript" src="js/passingGraph.js"></script>
+        <!--<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>-->
+        <!--<script>
+            function initialize() {
+                
+                 var myLatLng = {lat: 24.872218, lng: 90.973143};
+
+              var mapProp = {
+                center:new google.maps.LatLng(24.872218,90.973143),
+                zoom:18,
+                  mapTypeId: google.maps.MapTypeId.SATELLITE,
+                  scrollwheel: false,
+
+              };
+                 var marker = new google.maps.Marker({
+                map: mapProp,
+                position: myLatLng,
+                title: 'Mohangonj Pilot Govt high School'
+                });
+
+                
+              var map=new google.maps.Map(document.getElementById("map-container"),mapProp);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>-->
     </body>
     
     

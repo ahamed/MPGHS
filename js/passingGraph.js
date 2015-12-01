@@ -1,5 +1,5 @@
 
-    function showGraph(){
+    
     //var ctx = $("#passingGraph").get(0).getContext("2d");
 
 var ctx = document.getElementById("passingGraph").getContext("2d");
@@ -181,7 +181,7 @@ var ga1, ga2, ga3, ga4, ga5, ga6;
         
 
 var data ={
-labels: [y1,y2,y3,y4,y5,y6],
+labels: [y6,y5,y4,y3,y2,y1],
     datasets: [
         {
             label: "Annual result curve",
@@ -191,7 +191,8 @@ labels: [y1,y2,y3,y4,y5,y6],
             pointStrokeColor: "#8c2375",
             pointHighlightFill: "#8c2375",
             pointHighlightStroke: "#8c2375",
-            data: [p1,p2,p3,p4,p5,p6]
+            //data: [p1,p2,p3,p4,p5,p6]
+            data: [p6,p5,p4,p3,p2,p1]
         },
         {
             label: "Annual result curve for A+",
@@ -201,7 +202,8 @@ labels: [y1,y2,y3,y4,y5,y6],
             pointStrokeColor: "#8c2375",
             pointHighlightFill: "#8c2375",
             pointHighlightStroke: "#8c2375",
-            data: [pa1,pa2,pa3,pa4,pa5,pa6]
+            //data: [pa1,pa2,pa3,pa4,pa5,pa6]
+            data: [pa6,pa5,pa4,pa3,pa2,pa1]
         },
         {
             label: "Annual result curve for A+",
@@ -211,7 +213,8 @@ labels: [y1,y2,y3,y4,y5,y6],
             pointStrokeColor: "#8c2375",
             pointHighlightFill: "#8c2375",
             pointHighlightStroke: "#8c2375",
-            data: [ga1,ga2,ga3,ga4,ga5,ga6]
+            //data: [ga1,ga2,ga3,ga4,ga5,ga6]
+            data: [ga6,ga5,ga4,ga3,ga2,ga1]
         }
     ]
 };
@@ -231,4 +234,4 @@ Chart.defaults.global.responsive = true;
 //Chart.defaults.Line.scaleGridLineWidth = 1;
 //Chart.defaults.Line.bezierCurve = false;
     
-    }
+    

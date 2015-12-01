@@ -4,7 +4,7 @@
                 <div class="col-xs-6 col-sm-3 ">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#history">Home</a></li>
                         <li><a href="aboutus.html">About</a></li>
                         <li><a href="#">Menu</a></li>
                         <li><a href="contactus.html">Contact</a></li>

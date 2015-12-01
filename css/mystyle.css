@@ -31,8 +31,24 @@ body {
 }
 
 .navbar-inverse{
-    background: #78286B;
+    #background: #78286B;
+    
+    #background: -webkit-linear-gradient(left, #D7483F 30%, #78286B);
+    #background: -moz-linear-gradient(left,#D7483F 30%, #78286B );
+    #background: -o-linear-gradient(left,#D7483F 30%, #78286B );
+    #background: linear-gradient(left,#D7483F 30%, #78286B );
+    
+    background: -webkit-linear-gradient(left, #78286B 30%, #D7483F);
+    background: -moz-linear-gradient(left, #78286B 30%, #D7483F);
+    background: -o-linear-gradient(left, #78286B 30%, #D7483F);
+    background: linear-gradient(left, #78286B 30%, #D7483F);
+    
+    border-bottom: 2px solid rgba(215, 72, 63, 0.20);
+    color: white;
+    
+    
 }
+
 
 .row-footer {
   margin: 0px auto;
@@ -81,3 +97,32 @@ canvas{
 .affix{
     top :60px;
 }
+
+.boys{
+    border-right: 2px solid #ddd;
+}
+
+#map-container{
+    width:  500px;
+    height: 280px;
+}
+
+p{
+    text-align: justify;
+}
+
+body{
+    background:  	rgba(208,208,208,0.3) ;
+}
+
+.dropdown-menu{
+    background: -webkit-linear-gradient(left, #78286B 30%, #D7483F);
+    background: -moz-linear-gradient(left, #78286B 30%, #D7483F);
+    background: -o-linear-gradient(left, #78286B 30%, #D7483F);
+    background: linear-gradient(left, #78286B 30%, #D7483F);
+}
+
+.dropdown-menu > li > a{
+    color: #ddd;
+}
+

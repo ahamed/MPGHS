@@ -17,10 +17,19 @@
                 <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">Home</a></li>
-                        <li class=""><a href="#">Menu</a></li>
-                        <li class=""><a href="#">Contacts</a></li>
-                        <li class=""><a href="#">About</a></li>
-                        <li class=""><a href="#">Extra</a></li>
+                        <li class=""><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Preference <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Rules &amp; Regulations</a></li>
+                                <li><a href="#">Managing Board</a></li>
+                                <li class="divider" role="separator"></li>
+                                <li><a href="#">Librery</a></li>
+                            </ul>
+                        
+                        </li>
+                        <li class=""><a href="#"><span class="glyphicon glyphicon-education"></span> Teachers and Students Center</a></li>
+                        <li class=""><a href="#"><span class="glyphicon glyphicon-screenshot"></span> Game and Sports</a></li>
+                        <li class=""><a href="#"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
+                        
                         
                     </ul>
                 </div> <!-- end div for id navbar-->
