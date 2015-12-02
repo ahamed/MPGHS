@@ -1,8 +1,6 @@
+//var ctx = $("#passingGraph").get(0).getContext("2d");
 
-    
-    //var ctx = $("#passingGraph").get(0).getContext("2d");
-
-var ctx = document.getElementById("passingGraph").getContext("2d");
+var ctx = document.getElementById("resultGraph").getContext("2d");
 
 Chart.defaults.global = {
     // Boolean - Whether to animate the chart
@@ -130,58 +128,59 @@ Chart.defaults.global = {
     multiTooltipTemplate: "<%= value %>",
 
     // Function - Will fire on animation progression.
-    onAnimationProgress: function(){},
+    onAnimationProgress: function () {},
 
     // Function - Will fire on animation completion.
-    onAnimationComplete: function(){}
+    onAnimationComplete: function () {}
 }
 
-var y1,y2,y3,y4,y5,y6;
-var p1,p2,p3,p4,p5,p6;
-var pa1,pa2,pa3,pa4,pa5,pa6;
-var ga1, ga2, ga3, ga4, ga5, ga6;        
-    y1 = document.getElementById("yr0").innerHTML;        
-    y2 = document.getElementById("yr1").innerHTML;        
-    y3 = document.getElementById("yr2").innerHTML;        
-    y4 = document.getElementById("yr3").innerHTML;        
-    y5 = document.getElementById("yr4").innerHTML;        
-    y6 = document.getElementById("yr5").innerHTML;        
+var y1, y2, y3, y4, y5, y6;
+var p1, p2, p3, p4, p5, p6;
+var pa1, pa2, pa3, pa4, pa5, pa6;
+var ga1, ga2, ga3, ga4, ga5, ga6;
+y1 = parseInt(document.getElementById("yr0").innerHTML);
+y2 = parseInt(document.getElementById("yr1").innerHTML);
+y3 = parseInt(document.getElementById("yr2").innerHTML);
+y4 = parseInt(document.getElementById("yr3").innerHTML);
+y5 = parseInt(document.getElementById("yr4").innerHTML);
+y6 = parseInt(document.getElementById("yr5").innerHTML);
 
-        
-    p1 = parseFloat(document.getElementById("p0").innerHTML);
-    p2 = parseFloat(document.getElementById("p1").innerHTML);
-    p3 = parseFloat(document.getElementById("p2").innerHTML);
-    p4 = parseFloat(document.getElementById("p3").innerHTML);
-    p5 = parseFloat(document.getElementById("p4").innerHTML);
-    p6 = parseFloat(document.getElementById("p5").innerHTML);
-        
-        
-    pa1 = parseInt(document.getElementById("ap0").innerHTML);
-    pa2 = parseInt(document.getElementById("ap1").innerHTML);
-    pa3 = parseInt(document.getElementById("ap2").innerHTML);
-    pa4 = parseInt(document.getElementById("ap3").innerHTML);
-    pa5 = parseInt(document.getElementById("ap4").innerHTML);
-    pa6 = parseInt(document.getElementById("ap5").innerHTML);
-        
-        
-    ga1 = parseInt(document.getElementById("gp0").innerHTML);
-    ga2 = parseInt(document.getElementById("gp1").innerHTML);
-    ga3 = parseInt(document.getElementById("gp2").innerHTML);
-    ga4 = parseInt(document.getElementById("gp3").innerHTML);
-    ga5 = parseInt(document.getElementById("gp4").innerHTML);
-    ga6 = parseInt(document.getElementById("gp5").innerHTML);    
-    /*p1 = document.getElementById("p0").innerHTML;
-    p2 = document.getElementById("p1").innerHTML;
-    p3 = document.getElementById("p2").innerHTML;
-    p4 = document.getElementById("p3").innerHTML;
-    p5 = document.getElementById("p4").innerHTML;
-    p6 = document.getElementById("p5").innerHTML;*/
-        
-        
-        
 
-var data ={
-labels: [y6,y5,y4,y3,y2,y1],
+p1 = parseFloat(document.getElementById("p0").innerHTML);
+p2 = parseFloat(document.getElementById("p1").innerHTML);
+p3 = parseFloat(document.getElementById("p2").innerHTML);
+p4 = parseFloat(document.getElementById("p3").innerHTML);
+p5 = parseFloat(document.getElementById("p4").innerHTML);
+p6 = parseFloat(document.getElementById("p5").innerHTML);
+
+
+pa1 = parseInt(document.getElementById("ap0").innerHTML);
+pa2 = parseInt(document.getElementById("ap1").innerHTML);
+pa3 = parseInt(document.getElementById("ap2").innerHTML);
+pa4 = parseInt(document.getElementById("ap3").innerHTML);
+pa5 = parseInt(document.getElementById("ap4").innerHTML);
+pa6 = parseInt(document.getElementById("ap5").innerHTML);
+
+
+ga1 = parseInt(document.getElementById("gp0").innerHTML);
+ga2 = parseInt(document.getElementById("gp1").innerHTML);
+ga3 = parseInt(document.getElementById("gp2").innerHTML);
+ga4 = parseInt(document.getElementById("gp3").innerHTML);
+ga5 = parseInt(document.getElementById("gp4").innerHTML);
+ga6 = parseInt(document.getElementById("gp5").innerHTML);
+/*p1 = document.getElementById("p0").innerHTML;
+p2 = document.getElementById("p1").innerHTML;
+p3 = document.getElementById("p2").innerHTML;
+p4 = document.getElementById("p3").innerHTML;
+p5 = document.getElementById("p4").innerHTML;
+p6 = document.getElementById("p5").innerHTML;*/
+
+
+
+
+var data = {
+    labels: [y6, y5, y4, y3, y2, y1],
+    //labels: [2009, 2010, 2011, 2012, 2013, y2],
     datasets: [
         {
             label: "Annual result curve",
@@ -192,8 +191,10 @@ labels: [y6,y5,y4,y3,y2,y1],
             pointHighlightFill: "#8c2375",
             pointHighlightStroke: "#8c2375",
             //data: [p1,p2,p3,p4,p5,p6]
-            data: [p6,p5,p4,p3,p2,p1]
-        },
+            data: [p6, p5, p4, p3, p2, p1]
+                //data: [10, 20, 30, 40, 50, 60]
+        }
+        ,
         {
             label: "Annual result curve for A+",
             fillColor: "rgba(255, 215, 0, 0.3)",
@@ -203,8 +204,8 @@ labels: [y6,y5,y4,y3,y2,y1],
             pointHighlightFill: "#8c2375",
             pointHighlightStroke: "#8c2375",
             //data: [pa1,pa2,pa3,pa4,pa5,pa6]
-            data: [pa6,pa5,pa4,pa3,pa2,pa1]
-        },
+            data: [pa6, pa5, pa4, pa3, pa2, pa1]
+                },
         {
             label: "Annual result curve for A+",
             fillColor: "rgba(0, 255, 0, 0.3)",
@@ -214,24 +215,22 @@ labels: [y6,y5,y4,y3,y2,y1],
             pointHighlightFill: "#8c2375",
             pointHighlightStroke: "#8c2375",
             //data: [ga1,ga2,ga3,ga4,ga5,ga6]
-            data: [ga6,ga5,ga4,ga3,ga2,ga1]
-        }
+            data: [ga6, ga5, ga4, ga3, ga2, ga1]
+                }
     ]
 };
-var myLineChart = new Chart(ctx).Line(data,{
-    bezierCurve : false,
-    scaleGridLineWidth : 3,
+var myLineChart = new Chart(ctx).Line(data, {
+    bezierCurve: false,
+    scaleGridLineWidth: 3,
     scaleShowVerticalLines: true,
-    bezierCurveTension : 0.4,
-     scaleShowGridLines : true,
-    pointDotRadius : 10,
-    legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
-    datasetStrokeWidth : 5,
-    scaleGridLineColor : "rgba(255,0,0,.05)",
+    bezierCurveTension: 0.4,
+    scaleShowGridLines: true,
+    pointDotRadius: 10,
+    legendTemplate: "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<datasets.length; i++){%><li><span style=\"background-color:<%=datasets[i].strokeColor%>\"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>",
+    datasetStrokeWidth: 5,
+    scaleGridLineColor: "rgba(255,0,0,.05)",
 });
 
 Chart.defaults.global.responsive = true;
 //Chart.defaults.Line.scaleGridLineWidth = 1;
 //Chart.defaults.Line.bezierCurve = false;
-    
-    

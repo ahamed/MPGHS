@@ -126,3 +126,36 @@ body{
     color: #ddd;
 }
 
+.navbar-inverse .navbar-nav > .active > a {
+  background: #660033;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background: #660033;
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > .active > a:focus {
+  background: #660033;
+  color: #fff;
+}
+
+.uniform-ul .glyphicon{
+    color: darkgreen;
+}
+
+.navbar-inverse .glyphicon{
+    color: lavenderblush;
+}
+
+#bb > a > span {
+    color: red;
+}
+
+.t-info{
+    background: #ddd;
+    padding: 15px;
+}
+
+#myScrollSpy li{
+    width: 250px;
+}
