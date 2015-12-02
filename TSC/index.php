@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="../css/loading.css">
     <link rel="stylesheet" href="../css/mystyle.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../bower_components/css/hover-min.css">
+ 
+    
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -68,12 +71,13 @@
                         
                         ?>
 
-                        <div class="row row-content" id="teacher<?php echo $inc;?>">
-                            <div class="media">
+                        <div class="row row-content hvr-float-shadow" id="teacher<?php echo $inc;?>">
+                            <div class="media grid">
                                 <div class="media-left media-middle">
                                     <img class="img-responsive media-object img-thumbnail" src="../images/teachers/<?php echo $data[8]?>" width="400" height="400">
                                 </div>
-                                <div class="media-body t-info">
+                                
+                                <div class="media-body t-info ">
                                     <p style="padding-bottom: 20px;"></p>
                                     <dl class="dl-horizontal">
                                         <dt>Name    : </dt>
@@ -179,6 +183,7 @@
                 <div class="col-sm-2 col-xs-12">
                     <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
                         <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                            <li role="presentation">Teachers</li>
                             <?php
                             include "../resourses/init.php";
                                 $sql = mysql_query("select * from teachers order by name DESC");

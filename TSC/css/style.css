@@ -4,3 +4,7 @@
     padding: 70px 30px;
 }
 
+.hvr-bounce-to-left:hover{
+    background:    rgba(128, 0, 128, .2);
+}
+

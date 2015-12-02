@@ -159,3 +159,8 @@ body{
 #myScrollSpy li{
     width: 250px;
 }
+
+.media-body i{
+    color: green;
+}
+
