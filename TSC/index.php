@@ -18,15 +18,19 @@
     <link rel="stylesheet" href="../css/mystyle.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../bower_components/css/hover-min.css">
- 
-    
+
+
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollSpy" data-offset="100">
-    <?php include "menu.php";?>
+    <?php include "../resourses/menu.php";?>
+    <script type="text/javascript">
+        var d = document.getElementById("tsc");
+        d.className = "active";
+    </script>
 
         <header class="jumbotron">
             <div class="container">
@@ -57,8 +61,8 @@
 
         <div class="container">
 
-            <div class="row row-content" id="teachers-info">
-                <div class="col-sm-10 col-xs-12">
+            <div class="row row-content" id="teachers-info ">
+                <div class="col-sm-10 col-xs-12" id="outer-row">
                     <!-- start inner row for partitioning the main area into two parts-->
 
                     <!-- start php code from here-->
@@ -76,7 +80,7 @@
                                 <div class="media-left media-middle">
                                     <img class="img-responsive media-object img-thumbnail" src="../images/teachers/<?php echo $data[8]?>" width="400" height="400">
                                 </div>
-                                
+
                                 <div class="media-body t-info ">
                                     <p style="padding-bottom: 20px;"></p>
                                     <dl class="dl-horizontal">
@@ -135,78 +139,20 @@
 
 
 
-
-                            <!-- start 2nd teacher profile-->
-
-                            <!--<div class="row row-content">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <img class="img-responsive media-object img-thumbnail" src="..//images/math_teacher.jpg" width="400" height="400"> 
-                            </div>
-                            <div class="media-body t-info">
-                                <p style="padding-bottom: 20px;"></p>
-                                <dl class="dl-horizontal">
-                                    <dt>Name    : </dt>
-                                    <dd>Kanai master</dd>
-                                    
-                                    <dt>Age : </dt>
-                                    <dd>63</dd>
-                                    
-                                    <dt>Specialized for : </dt>
-                                    <dd>Mathematics</dd>
-                                    
-                                    <dt>Short biography :</dt>
-                                    <dd>Joined high school at 1963 in Mohangonj Pilot Govt. High School and finish his high school at 1968. Joined at BAUC at 2009 and finished at 2011. Then he admitted into Jagannath University Dhaka at Department of Computer Science and Engineering and completed his graduation at 2016. </dd>
-                                    <p style="padding-bottom: 5px;"></p>
-                                    <dt>Contacts : </dt>
-                                    <dd>
-                                        
-                                        <div class="btn-group" role="group">
-                                            <a type="button" href="tel:+8801778919803" class="btn btn-success"><span class="fa fa-phone"></span></a>
-                                            <a type="button" href="#" class="btn btn-info"><span class="fa fa-facebook"></span></a>
-                                            <a type="button" href="mailto:sajeeb07ahamed@gmail.com" class="btn btn-warning"><span class="fa fa-envelope"></span></a>
-                                            <a type="button" href="#" class="btn btn-info"><span class="fa fa-twitter"></span></a>
-                                            
-                                        </div>
-                                    </dd>
-                                    
-                                </dl>
-                            </div>
-                        
-                        </div><!-- end media-->
-                            <!--</div>-->
-
-
                 </div>
                 <!-- end main information point -->
 
-                <div class="col-sm-2 col-xs-12">
-                    <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
-                        <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                            <li role="presentation">Teachers</li>
-                            <?php
-                            include "../resourses/init.php";
-                                $sql = mysql_query("select * from teachers order by name DESC");
-                    $inc = 0;
-                    while($data = mysql_fetch_array($sql)){
-                     ?>
-                                <li role="presentation">
-                                    <a href="#teacher<?php echo $inc;?>">
-                                        <?php echo $data[0];?>
-                                    </a>
-                                  <!--  <img clsss="img-responsive img-circle" src="../images/teachers/<?php echo $data[8];?>" width="20" height="20" style="display:inline;"></li>-->
-                                <?php 
-                        
-                        
-                        $inc++;
-                    }
+                <div class="col-sm-2 col-xs-12" id="right_panel">
+        
+                        <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
+                            <?php 
+                                require "../resourses/class.resultTable.inc";
+                                $rightAffix = new resultTable;
+                                $rightAffix -> showRightAffix();
                             ?>
+                        </nav>
+                
 
-
-
-
-                        </ul>
-                    </nav>
                 </div>
                 <!-- end left side reserve part-->
             </div>

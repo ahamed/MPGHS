@@ -13,10 +13,14 @@
     <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap-social.css">
     <link rel="stylesheet" href="../css/loading.css">
-    <link rel="stylesheet" href="../css/mystyle.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="../bower_components/jsImgSlider/themes/2/js-image-slider.css">
+    <link rel="stylesheet" href="../css/mystyle.css">
+
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="../bower_components/jsImgSlider/themes/2/js-image-slider.js"></script>
+    <script src="../bower_components/jsImgSlider/flux.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollSpy" data-offset="100" >
@@ -27,9 +31,15 @@
 
 
     <!-- include the menu bar-->
-    <?php include "menu.php"; ?>
-
-        <?php include "../resourses/carousel.php";?>
+    <?php include "../resourses/menu.php"; ?>
+   
+    <script type="text/javascript">
+        var d = document.getElementById("home");
+        d.className = "active";
+    </script>
+    
+    <?php include "../resourses/carousel.php";?>
+    
 
 
             <!-- start container-->
@@ -85,143 +95,14 @@
 
                                             </div>
                                             <div class="table-responsive">
-                                                <table class="table table-striped table-hover table-bordered">
-
-
-                                                    <?php 
-                                                    include "../resourses/init.php";
-                                        
-                                        $sql = "select * from achivements order by year DESC limit 6";
-                                        $fetch_data = mysql_query($sql) or die("data not found");
-
-                                        ?>
-                                                        <tr class="danger">
-                                                            <th>Year</th>
-
-                                                            <?php 
-                                             $inc = 0;
-                                        while ( $data = mysql_fetch_array($fetch_data)){
-                                            ?>
-
-
-                                                                <th id="yr<?php echo $inc; ?>">
-                                                                    <?php  echo $data[0]; ?>
-                                                                </th>
-
-                                                                <?php 
-                                        $inc ++;
-                                        }
-                                             
-                                        ?>
-                                                        </tr>
-                                                        <tr class="success">
-                                                            <th>Total Examinees</th>
-
-                                                            <?php    
-                                             $sql = "select * from achivements order by year DESC limit 6";
-                                            $fetch_data = mysql_query($sql) or die("data not found");
-                                            $inc = 0;
-                                            while($data = mysql_fetch_array($fetch_data)){
-                                                 ?>
-
-                                                                <td id="ex<?php echo $inc?>">
-                                                                    <?php echo $data[1];?>
-                                                                </td>
-                                                                <?php
-                                                    
-                                                $inc++;    
-                                                }
-                                            ?>
-                                                        </tr>
-                                                        <tr class="warning">
-                                                            <th>Total passed</th>
-                                                            <?php
-                                            
-                                             $sql = "select * from achivements order by year DESC limit 6";
-                                        $fetch_data = mysql_query($sql) or die("data not found");
-                                             $inc = 0;
-                                            while($data  = mysql_fetch_array($fetch_data)){
+                                                <?php 
+                                                    require "../resourses/class.resultTable.inc";
+                                                    $table = new resultTable;
+                                                    $table -> showTable();
                                                 ?>
-                                                                <td id="pa<?php echo $inc?>">
-                                                                    <?php echo $data[2];?>
-                                                                </td>
-
-                                                                <?php 
                                                 
-                                                $inc ++;
-                                            }
-                                             
-                                             ?>
-                                                        </tr>
-                                                        <tr class="success">
-                                                            <th>Total A+</th>
-
-                                                            <?php
-                                            $sql = "select * from achivements order by year DESC limit 6";
-                                        $fetch_data = mysql_query($sql) or die("data not found");
-                                                $inc = 0;
-                                                while($data = mysql_fetch_array($fetch_data)){
-                                                    ?>
-                                                                <td id="ap<?php echo $inc?>">
-                                                                    <?php echo $data[3];?>
-                                                                </td>
-
-                                                                <?php 
-                                                    $inc++;
-                                                }
-                                            ?>
-
-                                                        </tr>
-                                                        <tr class="warning">
-                                                            <th>Total Golden A+</th>
-                                                            <?php
-                                            $sql = "select * from achivements order by year DESC limit 6";
-                                        $fetch_data = mysql_query($sql) or die("data not found");
-                                            $inc = 0;
-                                            while($data = mysql_fetch_array($fetch_data)){
-                                                ?>
-
-                                                                <td id="gp<?php echo $inc;?>">
-                                                                    <?php echo $data[4];?>
-                                                                </td>
-
-                                                                <?php
                                                 
-                                                $inc++;
-                                            }
-                                            
-                                            ?>
-                                                        </tr>
-                                                        <tr class="success">
-                                                            <th>Passed (%)</th>
-
-                                                            <?php
-                                             $sql = "select * from achivements order by year DESC limit 6";
-                                        $fetch_data = mysql_query($sql) or die("data not found");
-                                             $inc = 0;
-                                            while($data = mysql_fetch_array($fetch_data)){
-                                                $percent = ($data[2] * 100)/($data[1]);
-                                                $number = number_format($percent,2,'.','');
-                                               
-                                                ?>
-                                                                <td id="p<?php echo $inc;?>">
-                                                                    <?php echo $number;?>
-                                                                </td>
-
-                                                                <?php
-                                               $inc++;
-                                                
-                                            }
-                                             
-                                            ?>
-                                                        </tr>
-
-                                                        <?php
-                                        ?>
-                                                            <!-- end php tag-->
-
-
-                                                </table>
+                                          
                                             </div>
                                             <!-- end table responsive class-->
 
@@ -358,10 +239,8 @@
                             </div>
                             <!-- end address -->
                             <div class="col-sm-8 col-xs-12">
-                                <div class="container">
-                                    <div id="map-container" width="600" height="400">
+                                <div id="map-container" >
 
-                                    </div>
                                 </div>
                             </div>
                             <!-- end location map-->
@@ -377,15 +256,18 @@
 
 
                     <div class="col-xs-2 col-sm-2">
-                        <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
-                            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                                <li><a href="#history">History</a></li>
-                                <li><a href="#achivements">Annual Report</a></li>
-                                <li><a href="#uniform">Uniform</a></li>
-                                <li><a href="#location">Location</a></li>
+                        
+                            <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
+                                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                                    <li><a href="#history">History</a></li>
+                                    <li><a href="#achivements">Annual Report</a></li>
+                                    <li><a href="#uniform">Uniform</a></li>
+                                    <li><a href="#location">Location</a></li>
 
-                            </ul>
-                        </nav>
+                                </ul>
+                            </nav>
+                    
+                        
                     </div>
                     <!-- end right side panel-->
                 </div>
@@ -402,7 +284,8 @@
                 <script type="text/javascript" src="../bower_components/jquery/dist/chart.min.js"></script>
                 <script type="text/javascript" src="../js/passingGraph.js"></script>
                 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
+                
+            
 
                 <script>
                     function initialize() {

@@ -1,0 +1,44 @@
+.form-horizontal input {
+    padding-bottom: 20px;
+}
+
+#main-login-row {
+    margin-top: 60px;
+}
+
+.panel {
+    min-height: 400px;
+    min-width: 300px;
+}
+
+.panel-body > form > input {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+form > img {
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-group > label > span {
+    color: #4198A7;
+}
+
+.form-group > input {
+    color: #4198A7;
+}
+
+.form-group .alert-danger {
+    width: 100%;
+}
+
+.form-group .alert-danger span {
+    font-size: 20px;
+    color: darkred;
+}
+
+#not-matched-alert {
+    display: none;
+}
