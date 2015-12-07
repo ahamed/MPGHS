@@ -17,8 +17,8 @@
 
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li id="home"><a href="../home/">Home</a></li>
-                <li id="pref"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button">Preference <span class="caret"></span></a>
+                <li id="home"><a href="../home/"><i class="fa fa-home"></i> Home</a></li>
+                <li id="pref"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="fa fa-gears"></i> Preference <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li id="rar"><a href="#">Rules &amp; Regulations</a></li>
                         <li id="mb"><a href="#">Managing Board</a></li>
@@ -39,7 +39,7 @@
                 if(!($cookie -> test())){
                     ?>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="../login/" id="login">Are you a formar or current student? Login here</a></li>
+                    <li><a href="../login/" id="login"><i class="fa fa-sign-in"></i> Login here</a></li>
                 </ul>
 
                 <?php
@@ -48,7 +48,7 @@
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#" id="login" class="dropdown-toggle" data-toggle="dropdown" aria-haspop="true" aria-expanden="false" role="button">Hello,  <?php echo $_SESSION['userName'];?> <span class="caret"></span>
+                            <a href="#" id="login" class="dropdown-toggle" data-toggle="dropdown" aria-haspop="true" aria-expanden="false" role="button"><i class="fa fa-user"></i> HELLO,  <?php echo strtoupper($_SESSION['userName']);?> <span class="caret"></span>
                                 
                             </a>
                             <ul class="dropdown-menu">

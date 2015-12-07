@@ -60,17 +60,17 @@
 
                                 <div class="form-group has-feedback has-error">
                                     <input id="user" type="text" name="email" placeholder="Type your Email" class="form-control" style="margin-bottom:20px;">
-                                    <span class="form-control-feedback glyphicon glyphicon-user"></span>
+                                    <span class="form-control-feedback glyphicon glyphicon-user right-bar-icon"></span>
                                 </div>
                                 <div class="form-group has-feedback has-error">
                                     <input id="pass" type="password" name="pass" placeholder="Type your password" autocomplete="on" class="form-control has-danger">
-                                    <i class="form-control-feedback glyphicon glyphicon-lock"></i>
+                                    <span class="form-control-feedback glyphicon glyphicon-lock"></span>
                                 </div>
 
                                 <hr>
                                 <div class="form-group has-error">
                                     <label for="remember" class="checkbox-inline">
-                                        <input type="checkbox" name="remember" id="remember" autocomplete="off"> <span> Keep me logged in</span>
+                                        <input type="checkbox" name="remember" id="remember"> <span> Keep me logged in</span>
                                     </label>
                                 </div>
                                 <button type="submit" name="login" id="access" class=" btn btn-info form-control"><i class="fa fa-sign-in"></i> Login</button>

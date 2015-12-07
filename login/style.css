@@ -28,6 +28,7 @@ form > img {
 
 .form-group > input {
     color: #4198A7;
+    height: 60px;
 }
 
 .form-group .alert-danger {
@@ -41,4 +42,8 @@ form > img {
 
 #not-matched-alert {
     display: none;
+}
+
+.form-group span {
+    margin-top: 10px;
 }
