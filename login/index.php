@@ -53,16 +53,16 @@
                                 <img src="../images/logo.png" class="img-circle" height="100" width="100">
                                 <div class="form-group" id="not-matched-alert">
                                     <div class="alert alert-danger alert-dismissable" role="alert">
-                                        <button class="close" type="button" id="close" aria-label="close"><span id="close-alert" class="fa fa-close" aria-hidden="true"></span></button> Password Not Matched!</div>
+                                        <button class="close" type="button" id="close" aria-label="close"><i id="close-alert" class="fa fa-close" aria-hidden="true"></i></button> Password Not Matched!</div>
 
 
                                 </div>
 
-                                <div class="form-group has-feedback has-error">
+                                <div class="form-group has-feedback has-success">
                                     <input id="user" type="text" name="email" placeholder="Type your Email" class="form-control" style="margin-bottom:20px;">
                                     <span class="form-control-feedback glyphicon glyphicon-user right-bar-icon"></span>
                                 </div>
-                                <div class="form-group has-feedback has-error">
+                                <div class="form-group has-feedback has-success">
                                     <input id="pass" type="password" name="pass" placeholder="Type your password" autocomplete="on" class="form-control has-danger">
                                     <span class="form-control-feedback glyphicon glyphicon-lock"></span>
                                 </div>
@@ -72,7 +72,9 @@
                                     <label for="remember" class="checkbox-inline">
                                         <input type="checkbox" name="remember" id="remember"> <span> Keep me logged in</span>
                                     </label>
+                                    <a class="btn btn-danger pull-right" href="../signup/"><i class="icon icon-book"></i> Create an account</a>
                                 </div>
+                                <p style="padding-bottom: 1px;"></p>
                                 <button type="submit" name="login" id="access" class=" btn btn-info form-control"><i class="fa fa-sign-in"></i> Login</button>
                             </form>
                         </div>
@@ -80,13 +82,13 @@
                 </div>
             </div>
         </div>
+        <?php include "../resourses/footer.php";?>
+            <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+            <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
-
-        <?php 
+            <?php 
     session_start();
         include "../resourses/loginValidation.php";
         if( isset( $_POST['login'])){
@@ -105,21 +107,21 @@
                 $_SESSION[$session_name]= $session_value;
                 
     ?>
-            <script>
-                window.location = "../home/";
-
-            </script>
-            <?php
-            }else{
-                ?>
                 <script>
-                    $("#not-matched-alert").slideDown("slow");
-                    $("#close").click(function() {
-                        $("#not-matched-alert").slideUp("slow");
-                    });
+                    window.location = "../home/";
 
                 </script>
-                <?php 
+                <?php
+            }else{
+                ?>
+                    <script>
+                        $("#not-matched-alert").slideDown("slow");
+                        $("#close").click(function() {
+                            $("#not-matched-alert").slideUp("slow");
+                        });
+
+                    </script>
+                    <?php 
             }   
         }
     ?>

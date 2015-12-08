@@ -1,3 +1,20 @@
+/*Web fonts here*/
+
+@font-face {
+    font-family: 'jura';
+    src: url('../Fonts/jura.ttf');
+}
+
+@font-face {
+    font-family: 'league';
+    src: url('../Fonts/league.ttf');
+}
+
+@font-face {
+    font-family: 'signika';
+    src: url('../Fonts/signika.ttf');
+}
+
 .row-header {
     margin: 0px auto;
     padding: 0px 0px;
@@ -51,7 +68,13 @@ body {
 .row-footer {
     margin: 0px auto;
     padding: 20px 0px;
-    background-color: #afafaf;
+    background-color: #660033;
+}
+
+.row-footer a,
+.row-footer address,
+h5 {
+    color: wheat;
 }
 
 #outer-row {
@@ -149,11 +172,11 @@ body {
 }
 
 .uniform-ul .glyphicon {
-    color: darkgreen;
+    #color: darkgreen;
 }
 
 .navbar-inverse .glyphicon {
-    color: lavenderblush;
+    #color: lavenderblush;
 }
 
 #bb > a > span {
@@ -207,11 +230,11 @@ h2 {
 }
 
 .navbar-inverse .navbar-nav > li > a {
-    color: coral;
+    color: blanchedalmond;
 }
 
 .navbar-inverse .navbar-right > li > a {
-    color: #290000;
+    color: blanchedalmond;
 }
 
 
@@ -230,4 +253,17 @@ h2 {
 .navbar-inverse .navbar-nav > .open > a:focus {
     background: #660033;
     color: #fff;
+}
+
+.navbar-inverse a {
+    font-size: 15px;
+    #font-weight: bolder;
+    color: black;
+    font-family: 'signika';
+    font-weight: bold;
+}
+
+h4 {
+    font-family: 'jura';
+    font-weight: bold;
 }

@@ -23,7 +23,7 @@
     <script src="../bower_components/jsImgSlider/flux.min.js"></script>
 </head>
 
-<body data-spy="scroll" data-target="#myScrollSpy" data-offset="100" >
+<body data-spy="scroll" data-target="#myScrollSpy" data-offset="100">
 
     <div class="sk-cube-grid_main">
         <?php include "resourses/loading.php";?>
@@ -32,16 +32,17 @@
 
     <!-- include the menu bar-->
     <?php include "../resourses/menu.php"; ?>
-   
-    <script type="text/javascript">
-        var d = document.getElementById("home");
-        d.className = "active";
-    </script>
-    
-    <?php include "../resourses/carousel.php";?>
-    
+
+        <script type="text/javascript">
+            var d = document.getElementById("home");
+            d.className = "active";
+
+        </script>
+
+        <?php include "../resourses/carousel.php";?>
 
 
+            <hr>
             <!-- start container-->
             <div class="container">
 
@@ -77,13 +78,13 @@
                                 <ul class="nav nav-tabs" role="tablists">
                                     <li role="presentation" class="active">
                                         <a href="#graph" role="tab" data-toggle="tab" id="logGraph" aria-controls="graph">
-                                        Result State Graph
-                                    </a>
+                                            <i class="fa fa-line-chart"></i> Result State Graph
+                                        </a>
                                     </li>
                                     <li role="presentation">
                                         <a href="#table" data-toggle="tab" aria-contorls="table" role="tab">
-                                        Result State Table
-                                    </a>
+                                            <i class="icon icon-table"></i> Result State Table
+                                        </a>
                                     </li>
 
                                 </ul>
@@ -100,9 +101,9 @@
                                                     $table = new resultTable;
                                                     $table -> showTable();
                                                 ?>
-                                                
-                                                
-                                          
+
+
+
                                             </div>
                                             <!-- end table responsive class-->
 
@@ -190,7 +191,7 @@
                                                     <div class="media-left media-middle">
                                                         <img src="../images/girls.jpg" alt="girls uniform" class="img-responsive img-thumbnail media-object" width="200" height="400">
                                                     </div>
-                                                    <div class="media-body" >
+                                                    <div class="media-body">
                                                         <h4 class="media-heading"><i class="icon icon-female"></i> Girls</h4>
                                                         <ul style="list-style-type:none" class="uniform-ul">
                                                             <li><span class="glyphicon glyphicon-record"></span> Green Frock</li>
@@ -239,7 +240,7 @@
                             </div>
                             <!-- end address -->
                             <div class="col-sm-8 col-xs-12">
-                                <div id="map-container" >
+                                <div id="map-container">
 
                                 </div>
                             </div>
@@ -256,18 +257,18 @@
 
 
                     <div class="col-xs-2 col-sm-2">
-                        
-                            <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
-                                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                                    <li><a href="#history">History</a></li>
-                                    <li><a href="#achivements">Annual Report</a></li>
-                                    <li><a href="#uniform">Uniform</a></li>
-                                    <li><a href="#location">Location</a></li>
 
-                                </ul>
-                            </nav>
-                    
-                        
+                        <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
+                            <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
+                                <li><a href="#history">History</a></li>
+                                <li><a href="#achivements">Annual Report</a></li>
+                                <li><a href="#uniform">Uniform</a></li>
+                                <li><a href="#location">Location</a></li>
+
+                            </ul>
+                        </nav>
+
+
                     </div>
                     <!-- end right side panel-->
                 </div>
@@ -284,8 +285,8 @@
                 <script type="text/javascript" src="../bower_components/jquery/dist/chart.min.js"></script>
                 <script type="text/javascript" src="../js/passingGraph.js"></script>
                 <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-                
-            
+
+
 
                 <script>
                     function initialize() {
@@ -319,6 +320,7 @@
                     $(window).load(function() {
                         $(".sk-cube-grid_main").fadeOut("slow");
                     });
+                    $('[data-toggle="popover"]').popover();
 
                 </script>
 

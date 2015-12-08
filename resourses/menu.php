@@ -27,7 +27,7 @@
                     </ul>
 
                 </li>
-                <li class="" id="tsc"><a href="../TSC/"><span class="glyphicon glyphicon-education"></span> Teachers and Students Center</a></li>
+                <li class="" data-toggle="tooltip" data-placement="bottom" title="Teachers and Students Center" id="tsc"><a href="../TSC/"><span class="glyphicon glyphicon-education"></span> TSC</a></li>
                 <li class="" id="gas"><a href="#"><span class="glyphicon glyphicon-screenshot"></span> Game and Sports</a></li>
                 <li class="" id="bb"><a href="#"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
 
