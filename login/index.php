@@ -35,8 +35,9 @@
 <body>
     <?php include "../resourses/menu.php";?>
         <script>
-            var tag = document.getElementById("login");
-            tag.innerHTML = "";
+            var parent = document.getElementById("right-ul");
+            var child = document.getElementById("lin");
+            parent.removeChild(child);
 
         </script>
 
@@ -105,6 +106,7 @@
                 $session_value = $log -> user_name();
                 
                 $_SESSION[$session_name]= $session_value;
+                $_SESSION["email"] = $user;
                 
     ?>
                 <script>
@@ -125,6 +127,10 @@
             }   
         }
     ?>
+                        <script>
+                            $("li[data-toggle='popover']").popover();
+
+                        </script>
 </body>
 
 </html>

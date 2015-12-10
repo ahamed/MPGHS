@@ -34,8 +34,9 @@
 <body>
     <?php include "../resourses/menu.php";?>
         <script>
-            var tag = document.getElementById("login");
-            tag.innerHTML = "";
+            var parent = document.getElementById("right-ul");
+            var child = document.getElementById("lin");
+            parent.removeChild(child);
 
         </script>
 
@@ -48,7 +49,7 @@
                         </div>
                         <div class="panel-body">
 
-                            <form class="" action="#" method="POST">
+                            <form class="" action="#" method="POST" autocomplete="off">
                                 <dl class="dl-horizontal">
                                     <dt>
                                         <label for="fname" class="control-label"><span class="fa fa-asterisk "></span> Name : </label>
@@ -64,9 +65,9 @@
                                     </dt>
                                     <dd>
                                         <div class="form-group form-inline has-feedback has-success">
-                                            <div class="input-group ">
-                                                <input type="date" class="form-control" name="bdate" id="bdate" placeholder="Birth Date" required>
-                                                <div class="input-group-addon" id="ageToShown"></div>
+                                            <div class="input-group">
+                                                <input type="date" class="form-control" name="bdate" id="bdate" placeholder="Birth Date (mm/dd/yyyy)" required>
+                                                <div class="input-group-addon" id="ageToShown">0 Years Old</div>
                                             </div>
 
                                         </div>
@@ -76,14 +77,33 @@
                                     </dt>
                                     <dd>
                                         <div class="form-group has-feedback has-success">
-                                            <select name="gender" id="gender" class="form-control has-success" required>
-                                                <option class="has-success">&#xf183; Male</option>
-                                                <option>&#xf182; Female</option>
+                                            <select name="sex" id="gender" class="form-control has-success" required>
+                                                <option class="has-success" value="male">&#xf183; Male</option>
+                                                <option value="female">&#xf182; Female</option>
                                             </select>
                                         </div>
                                     </dd>
                                     <dt>
-                                        
+                                        <label for="blood" class="control-form"><strong class="fa fa-asterisk "></strong> Blood Group : </label>
+                                    </dt>
+                                    <dd>
+                                        <div class="form-group has-feedback has-success">
+                                            <select class="form-control" name="blood" id="blood">
+                                                <option selected value="">Select blood group</option>
+                                                <option value="A+">A+</option>
+                                                <option value="A-">A-</option>
+                                                <option value="B+">B+</option>
+                                                <option value="B-">B-</option>
+                                                <option value="AB+">AB+</option>
+                                                <option value="AB-">AB-</option>
+                                                <option value="O+">O+</option>
+                                                <option value="O-">O-</option>
+                                            </select>
+                                        </div>
+                                    </dd>
+
+
+                                    <dt>
                                         <label for="mobile"><strong class="fa fa-asterisk "></strong> Mobile : </label>
                                     </dt>
                                     <dd>
@@ -100,12 +120,22 @@
                                     <dt>
                                         <label for="email"><strong class="fa fa-asterisk "></strong> Email : </label>
                                     </dt>
-                                    <dd>
+                                    <dd data-toggle="tooltip" data-placement="right" title="Insert a valid email">
                                         <div class="form-group has-feedback has-success">
                                             <input type="email" class="form-control" name="email" id="email" placeholder="Email address" required>
                                             <span class="form-control-feedback glyphicon glyphicon-envelope"></span>
                                         </div>
                                     </dd>
+                                    <dt>
+                                        <label for="password" class="control-label"><strong class="fa fa-asterisk "></strong> Password : </label>
+                                    </dt>
+                                    <dd data-toggle="tooltip" data-placement="right" id="pass" title="Use a secure password at least 8 charecters">
+                                        <div class="form-group has-feedback has-success">
+                                            <input type="password" name="password" id="password" placeholder="Type a secure password al least 8 charecters" class="form-control" pattern=".{8,}">
+                                            <span class="form-control-feedback glyphicon glyphicon-lock"></span>
+                                        </div>
+                                    </dd>
+
                                     <dt>
                                         <label for="year"><strong class="fa fa-asterisk "></strong> Passing Year : </label>
                                     </dt>
@@ -117,7 +147,7 @@
                                                     var yr = date.getFullYear();
                                                     var str = "";
                                                     for (var year = yr; year >= (yr - 25); year--) {
-                                                        str += "<option>";
+                                                        str += "<option value=" + year + ">";
                                                         str += year;
                                                         str += "</option>";
                                                         document.write(str);
@@ -152,7 +182,7 @@
 
                                     <dd>
                                         <div class="form-group">
-                                            <button type="button" name="submit" class="form-control btn btn-success" id="submit"><span class="fa fa-paper-plane"></span> Create the account</button>
+                                            <button type="submit" name="upload" class="form-control btn btn-success" id="up"><span class="fa fa-paper-plane-o"></span> Create the account</button>
                                         </div>
                                     </dd>
                                 </dl>
@@ -161,6 +191,8 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
             <!-- end the outer row-->
         </div>
@@ -180,10 +212,74 @@
                         $("#ageToShown").text(age + " Years Old");
 
                     });
+
                 });
 
             </script>
+            <script>
+                $('[data-toggle="tooltip"]').hover(function() {
+                    $(this).tooltip();
+                });
 
+                if ($.browser.webkit) {
+                    $('input[name="password"]').attr('autocomplete', 'off');
+                    $('input[name="email"]').attr('autocomplete', 'off');
+                }
+
+            </script>
+
+            <?php
+    
+    include "../resourses/signupinsert.php";
+       // public $fname='',$lname='',$bdate='',$sex='',$blood='',$mobile='',$email='',$pass='', $year='',$uni='',$job='';
+        
+    if ( isset($_POST['upload'])){
+               
+        
+        if(isset($_POST['fname'])){
+                $fname = $_POST['fname'];
+            }
+
+        if(isset($_POST['lname'])){
+                $lname = $_POST['lname'];
+            }
+        if(isset($_POST['bdate'])){
+                $bdate = $_POST['bdate'];
+            }
+        if(isset($_POST['sex'])){
+                $sex = $_POST['sex'];
+            }
+        if(isset($_POST['blood'])){
+                $blood = $_POST['blood'];
+            }
+        if(isset($_POST['mobile'])){
+                $mobile = $_POST['mobile'];
+            }
+
+        if(isset($_POST['email'])){
+                $email = $_POST['email'];
+            }
+
+        if(isset($_POST['password'])){
+                $pass = $_POST['password'];
+            }
+        if(isset($_POST['year'])){
+                $year = $_POST['year'];
+            }
+        if(isset($_POST['graduation'])){
+                $uni = $_POST['graduation'];
+            }
+        if(isset($_POST['job'])){
+                $job = $_POST['job'];
+            }
+
+        $signup = new signup($fname, $lname, $bdate, $sex, $blood, $mobile,$email, $pass, $year, $uni, $job);
+            //$signup = new signup('sajeeb','ahamed','12/2/2012','Male','AB+','234','sa@je.eb','321','2009','jnu','st');
+           // $signup = new signup();
+        //$signup -> insert_into_students();
+        }
+    
+    ?>
 
 </body>
 

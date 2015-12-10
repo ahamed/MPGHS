@@ -78,7 +78,7 @@
                                 <ul class="nav nav-tabs" role="tablists">
                                     <li role="presentation" class="active">
                                         <a href="#graph" role="tab" data-toggle="tab" id="logGraph" aria-controls="graph">
-                                            <i class="fa fa-line-chart"></i> Result State Graph
+                                            <i class="fa fa-area-chart"></i> Result State Graph
                                         </a>
                                     </li>
                                     <li role="presentation">
@@ -320,7 +320,10 @@
                     $(window).load(function() {
                         $(".sk-cube-grid_main").fadeOut("slow");
                     });
-                    $('[data-toggle="popover"]').popover();
+                    $('[data-toggle="tooltip"]').tooltip();
+                    $('[data-toggle="popover"]').hover(function() {
+                        $(this).popover();
+                    });
 
                 </script>
 

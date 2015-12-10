@@ -24,7 +24,7 @@ class loginValidation{
     }
     
     public function evaluate_queries(){
-        $this -> sql = "select name,username,password from user where username = '$this->username' and password = '$this->password'";
+        $this -> sql = "select fname,email,password from students where email = '$this->username' and password = '$this->password'";
         $this -> login = mysql_query($this -> sql) or die("Login Error");
         $this -> rows = mysql_num_rows($this -> login);
         if( !($this -> rows)){

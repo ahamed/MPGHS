@@ -267,3 +267,7 @@ h4 {
     font-family: 'jura';
     font-weight: bold;
 }
+
+.copyright {
+    border-top: 2px solid #ddd;
+}
