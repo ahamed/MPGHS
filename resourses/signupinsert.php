@@ -55,12 +55,11 @@ class signup{
                 
             $_SESSION[$session_name]= $session_value;
             $_SESSION[$session_user_id] = $this -> email;
-           // $_SESSION[$session_mobile] = $this -> mobile;
+            $_SESSION[$session_mobile] = $this -> mobile;
             $img = mysql_query("insert into picture values('$this->mobile','../images/common.jpeg')") or die("Don't insert");
             
            ?>
     <script>
-        alert("worked");
         window.location.href = "../profile/";
 
     </script>
@@ -71,7 +70,6 @@ class signup{
             
             ?>
         <script>
-            alert("Not work");
             window.location.href = "../signup/";
 
         </script>
@@ -98,7 +96,7 @@ class signup{
         
         if(mysql_query($sqlupdate)){
             $_SESSION[$email_session] = $this->email;
-          //  $_SESSION[$mobile_session] = $this->mobile;
+            $_SESSION[$mobile_session] = $this->mobile;
             ?>
             <script>
                 window.location.href = "../profile/";

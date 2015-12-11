@@ -1,18 +1,82 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install' ]
-2 info using npm@1.4.28
-3 info using node@v0.10.40
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'isotop-layout' ]
+2 info using npm@1.4.29
+3 info using node@v0.10.41
 4 verbose node symlink /usr/bin/node
-5 error install Couldn't read dependencies
-6 error package.json ENOENT, open '/var/www/html/MPGHS/package.json'
-6 error package.json This is most likely not a problem with npm itself.
-6 error package.json npm can't find a package.json file in your current directory.
-7 error System Linux 3.13.0-68-generic
-8 error command "/usr/bin/node" "/usr/bin/npm" "install"
-9 error cwd /var/www/html/MPGHS
-10 error node -v v0.10.40
-11 error npm -v 1.4.28
-12 error path /var/www/html/MPGHS/package.json
-13 error code ENOPACKAGEJSON
-14 error errno 34
-15 verbose exit [ 34, true ]
+5 warn deprecated This version of npm lacks support for important features,
+6 warn deprecated such as scoped packages, offered by the primary npm
+7 warn deprecated registry. Consider upgrading to at least npm@2, if not the
+8 warn deprecated latest stable version. To upgrade to npm@2, run:
+9 warn deprecated npm -g install npm@latest-2
+10 warn deprecated To upgrade to the latest stable version, run:
+11 warn deprecated npm -g install npm@latest
+12 warn deprecated (Depending on how Node.js was installed on your system, you
+13 warn deprecated may need to prefix the preceding commands with `sudo`, or if
+14 warn deprecated on Windows, run them from an Administrator prompt.)
+15 warn deprecated If you're running the version of npm bundled with
+16 warn deprecated Node.js 0.10 LTS, be aware that the next version of 0.10 LTS
+17 warn deprecated will be bundled with a version of npm@2, which has some small
+18 warn deprecated backwards-incompatible changes made to `npm run-script` and
+19 warn deprecated semver behavior.
+20 verbose cache add [ 'isotop-layout', null ]
+21 verbose cache add name=undefined spec="isotop-layout" args=["isotop-layout",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'isotop-layout',
+22 verbose parsed url   path: 'isotop-layout',
+22 verbose parsed url   href: 'isotop-layout' }
+23 silly lockFile d2f12cc2-isotop-layout isotop-layout
+24 verbose lock isotop-layout /home/sajeeb/.npm/d2f12cc2-isotop-layout.lock
+25 silly lockFile d2f12cc2-isotop-layout isotop-layout
+26 silly lockFile d2f12cc2-isotop-layout isotop-layout
+27 verbose addNamed [ 'isotop-layout', '' ]
+28 verbose addNamed [ null, '*' ]
+29 silly lockFile 9af89ab5-isotop-layout isotop-layout@
+30 verbose lock isotop-layout@ /home/sajeeb/.npm/9af89ab5-isotop-layout.lock
+31 silly addNameRange { name: 'isotop-layout', range: '*', hasData: false }
+32 verbose request where is /isotop-layout
+33 verbose request registry https://registry.npmjs.org/
+34 verbose request id e82c3e6c0385d1ef
+35 verbose url raw /isotop-layout
+36 verbose url resolving [ 'https://registry.npmjs.org/', './isotop-layout' ]
+37 verbose url resolved https://registry.npmjs.org/isotop-layout
+38 verbose request where is https://registry.npmjs.org/isotop-layout
+39 info trying registry request attempt 1 at 22:25:44
+40 http GET https://registry.npmjs.org/isotop-layout
+41 http 404 https://registry.npmjs.org/isotop-layout
+42 silly registry.get cb [ 404,
+42 silly registry.get   { 'content-type': 'application/json',
+42 silly registry.get     'cache-control': 'max-age=0',
+42 silly registry.get     'content-length': '2',
+42 silly registry.get     'accept-ranges': 'bytes',
+42 silly registry.get     date: 'Fri, 11 Dec 2015 16:25:45 GMT',
+42 silly registry.get     via: '1.1 varnish',
+42 silly registry.get     age: '0',
+42 silly registry.get     connection: 'keep-alive',
+42 silly registry.get     'x-served-by': 'cache-sin6926-SIN',
+42 silly registry.get     'x-cache': 'MISS',
+42 silly registry.get     'x-cache-hits': '0',
+42 silly registry.get     'x-timer': 'S1449851144.854195,VS0,VE838' } ]
+43 silly lockFile 9af89ab5-isotop-layout isotop-layout@
+44 silly lockFile 9af89ab5-isotop-layout isotop-layout@
+45 error 404 Not Found
+45 error 404
+45 error 404 'isotop-layout' is not in the npm registry.
+45 error 404 You should bug the author to publish it
+45 error 404
+45 error 404 Note that you can also install from a
+45 error 404 tarball, folder, or http url, or git url.
+46 error System Linux 3.13.0-71-generic
+47 error command "/usr/bin/node" "/usr/bin/npm" "install" "isotop-layout"
+48 error cwd /var/www/html/MPGHS
+49 error node -v v0.10.41
+50 error npm -v 1.4.29
+51 error code E404
+52 verbose exit [ 1, true ]

@@ -51,7 +51,7 @@ $target_file =$target_dir.basename($_FILES['avater']['name']);
         $uploadOk = 0;
     }
 
-    if($_FILES['avater']['size']> 5000000){
+    if($_FILES['avater']['size']> 500000){
         echo "sorry your file is too large";
         header("Location: ../profile/");
 

@@ -65,7 +65,7 @@
                     ?>
                                     <div id="img_avater">
 
-                                        <img id="" src="<?php echo $img[1];?>" class="img-responsive media-object img-thumbnail" width=400 height=400>
+                                        <img id="" src="<?php echo $img[1];?>" class="img-responsive img-thumbnail" width=400 height=400>
                                     </div>
                                     <?php
                                 ?>
@@ -76,13 +76,13 @@
                             <div class="media-body">
                                 <button class="btn btn-link pull-right edit" type="button" id="<?php echo $data[5];?>" data-toggle="modal" data-target="#m<?php echo $data[5];?>" data-toggle="tooltip" data-placement="right" title="Edit Account Information"><span class="fa fa-pencil fa-2x"></span></button>
 
-                                <dl class="dl-horizontal">
-                                    <dt><h4 class="control-label"></h4>Name : </dt>
+                                <!--<dl class="dl-horizontal">
+                                    <dt><h4 class="control-label">Name : </h4></dt>
                                     <dd>
                                         <h4 class=""><?php echo $data[0]." ".$data[1];?></h4>
                                     </dd>
 
-                                    <dt><h4>Birth Date : </h4></dt>
+                                    <dt><h4>Birth Date :</dt>
                                     <dd>
                                         <h4 id="bdate"><?php echo $data[2];?></h4>
                                     </dd>
@@ -123,15 +123,88 @@
                                     <dd>
                                         <h4 id="job"><?php echo $data[10];?></h4>
                                     </dd>
-                                </dl>
+                                </dl>-->
+
+
+                                <div class="pull-left info">
+                                    <h2><?php echo $data[0]." ".$data[1];?></h2>
+                                    <a id="pop" class="btn btn-link" type="button" role="button" data-toggle="popover" data-trigger="focus" title="University" data-placement="right" data-content="Graduated from or studying in <?php echo $data[9];?>">
+                                        <div>
+
+                                            <h4><span class="fa fa-university"></span>  <?php echo $data[9];?></h4>
+                                        </div>
+                                    </a>
+                                    <br>
+
+                                    <a class="btn btn-link" type="button" role="button">
+                                        <div>
+
+                                            <h4><span class="fa fa-briefcase"></span>  <?php echo $data[10];?></h4>
+                                        </div>
+                                    </a>
+
+                                    <br>
+
+                                    <a class="btn btn-link" type="button" role="button">
+                                        <div>
+                                            <?php 
+                                                if( $data[3] == "male"){
+                                                    ?>
+                                                <h4><span class="fa fa-mars"></span>  <?php echo $data[3];?></h4>
+                                                <?php
+                                                }else{
+                                                    ?>
+                                                    <h4><span class="fa fa-venus"></span>  <?php echo $data[3];?></h4>
+
+                                                    <?php
+                                                    
+                                                }
+                                            ?>
+
+                                        </div>
+                                    </a>
+                                    <br>
+                                    <a class="btn btn-link" type="button" role="button">
+                                        <div>
+
+                                            <h4><span class="fa fa-birthday-cake"></span>  <?php echo date('F j,Y',strtotime($data[2]));?></h4>
+                                        </div>
+                                    </a>
+                                    <br>
+
+                                    <a class="btn btn-link" type="button" role="button">
+                                        <div>
+
+                                            <h4><span class="fa fa-tint"></span>  <?php echo $data[4];?></h4>
+                                        </div>
+                                    </a>
+                                    <br>
+                                    <a class="btn btn-link" type="button" role="button">
+                                        <div>
+
+                                            <h4><span class="fa fa-mobile"></span>  +880 <?php echo $data[5];?></h4>
+                                        </div>
+                                    </a>
+
+                                    <br>
+                                    <a class="btn btn-link" type="button" role="button">
+                                        <div>
+
+                                            <h4><span class="fa fa-envelope"></span>  <?php echo $data[6];?></h4>
+                                        </div>
+                                    </a>
 
 
 
+                                    <br>
+                                    <a class="btn btn-link" type="button" role="button">
+                                        <div>
 
+                                            <h4><span class="glyphicon glyphicon-education"></span>  <?php echo $data[8];?></h4>
+                                        </div>
+                                    </a>
 
-
-
-
+                                </div>
 
 
                             </div>
@@ -377,6 +450,9 @@
 
             <script>
                 $(".edit").tooltip();
+                //$("#pop").click(function() {
+                $('[data-toggle="popover"]').popover();
+                //});
 
             </script>
 
