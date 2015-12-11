@@ -16,6 +16,7 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="../bower_components/jsImgSlider/themes/2/js-image-slider.css">
     <link rel="stylesheet" href="../css/mystyle.css">
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -217,35 +218,21 @@
                         <!-- end uniform row-->
 
                         <!-- start location div-->
+                        <div class="row" id="location">
+                            <div class="col-sm-12">
+                                <span class="fa fa-map-marker fa-2x"> Location</span>
+                            </div>
+                        </div>
 
                         <div class="row row-content" id="location">
-                            <h1 class="media-heading">Address and Location</h1>
 
-                            <div class="col-sm-3 col-xs-12 col-sm-offset-1" style="padding: 20px;">
-
-                                <div class="media">
-                                    <div class="media-body">
-                                        <address>
-                                      Station road<br>
-                                      Mohangonj Upozilla, Mohangonj<br>
-                                      Netrakona, Bangladesh<br>
-                                      <i class="fa fa-phone"></i>: +852 1234 5678<br>
-                                      <i class="fa fa-fax"></i>: +852 8765 4321<br>
-                                      <i class="fa fa-envelope"></i>: 
-                                        <a href="mailto:mpghs@scl.gov">mpghs@scl.gov</a>
-                                   </address>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- end address -->
-                            <div class="col-sm-8 col-xs-12">
+                            <div class="col-sm-12 col-xs-12">
                                 <div id="map-container">
 
                                 </div>
                             </div>
-                            <!-- end location map-->
                         </div>
+
                         <!-- end row of location-->
 
 
@@ -284,35 +271,42 @@
                 <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
                 <script type="text/javascript" src="../bower_components/jquery/dist/chart.min.js"></script>
                 <script type="text/javascript" src="../js/passingGraph.js"></script>
-                <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+                <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDxpv8p3d-uEWZrwbBhUMpIxaXxUG_fdME &sensor=false&signed_in=true&callback=initMap"></script>
 
 
 
                 <script>
-                    function initialize() {
+                    var marker;
 
-                        var myLatLng = {
-                            lat: 24.872218,
-                            lng: 90.973143
-                        };
-
-                        var mapProp = {
-                            center: new google.maps.LatLng(24.872218, 90.973143),
-                            zoom: 18,
-                            mapTypeId: google.maps.MapTypeId.SATELLITE,
+                    function initMap() {
+                        var map = new google.maps.Map(document.getElementById('map-container'), {
+                            zoom: 13,
                             scrollwheel: false,
-
-                        };
-                        var marker = new google.maps.Marker({
-                            map: mapProp,
-                            position: myLatLng,
-                            title: 'Mohangonj Pilot Govt high School'
+                            center: {
+                                lat: 24.8723113,
+                                lng: 90.971032
+                            }
                         });
 
-
-                        var map = new google.maps.Map(document.getElementById("map-container"), mapProp);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            draggable: true,
+                            animation: google.maps.Animation.DROP,
+                            position: {
+                                lat: 24.8753113,
+                                lng: 90.968032
+                            }
+                        });
+                        marker.addListener('click', toggleBounce);
                     }
-                    google.maps.event.addDomListener(window, 'load', initialize);
+
+                    function toggleBounce() {
+                        if (marker.getAnimation() !== null) {
+                            marker.setAnimation(null);
+                        } else {
+                            marker.setAnimation(google.maps.Animation.BOUNCE);
+                        }
+                    }
 
                 </script>
 
