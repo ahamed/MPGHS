@@ -3,18 +3,17 @@ session_start();
 class signup{ 
     
     
-    public $link;
-    public $host, $user,$ps,$db;
-    public $username, $password, $sql,$login, $data, $rows;
+    private $link;
+    private $host, $user,$ps,$db;
+    private $username, $password, $sql,$login, $data, $rows;
     
-    public $fname, $lname, $bdate;
-    public $sex, $blood, $mobile;
-    public $email, $pass, $passing;
-    public $university, $job;
-    public $iist;
+    private $fname, $lname, $bdate;
+    private $sex, $blood, $mobile;
+    private $email, $pass, $passing;
+    private $university, $job;
+    private $iist;
     
     public function __construct($fname, $lname, $bdate, $sex, $blood, $mobile,$email, $pass, $passing, $uni, $job){
-  // public function __construct(){
         $this -> fname = $fname;
         $this -> lname = $lname;
         $this -> bdate = $bdate;
@@ -34,7 +33,7 @@ class signup{
         $this -> ps = "lumas";
         $this -> db = "mpghs";
         $this -> connect();
-        $this -> insert_into_students();
+        
         
         
     }
@@ -51,13 +50,17 @@ class signup{
                 
             $session_name = "userName";
             $session_user_id = "email";
+            $session_mobile = "mobile";
             $session_value = $this -> fname;
                 
             $_SESSION[$session_name]= $session_value;
             $_SESSION[$session_user_id] = $this -> email;
+           // $_SESSION[$session_mobile] = $this -> mobile;
+            $img = mysql_query("insert into picture values('$this->mobile','../images/common.jpeg')") or die("Don't insert");
             
            ?>
     <script>
+        alert("worked");
         window.location.href = "../profile/";
 
     </script>
@@ -68,6 +71,7 @@ class signup{
             
             ?>
         <script>
+            alert("Not work");
             window.location.href = "../signup/";
 
         </script>
@@ -77,13 +81,47 @@ class signup{
         }
     }
     
+    
+  
      public function connect(){
         $this -> link = mysql_connect($this->host, $this->user, $this->ps);
         mysql_select_db($this -> db) or die("database not found");
         
     }
-    
 
+    
+    public function update_table(){
+        $email_session = 'email';
+        $mobile_seddion = 'mobile';
+        
+        $sqlupdate = "UPDATE students SET fname  = '$this->fname',lname =  '$this->lname', bdate = '$this->bdate',sex = '$this->sex',blood = '$this->blood',mobile = '$this->mobile',email = '$this->email',passing_year = '$this->passing',university = '$this->university',job = '$this->job' WHERE email = '$_SESSION[$email_session]'";
+        
+        if(mysql_query($sqlupdate)){
+            $_SESSION[$email_session] = $this->email;
+          //  $_SESSION[$mobile_session] = $this->mobile;
+            ?>
+            <script>
+                window.location.href = "../profile/";
+
+            </script>
+
+
+            <?php 
+        }else{
+            ?>
+                <script>
+                    window.location.href = "../profile/";
+
+                </script>
+
+                <?php 
+            
+        }
+    }
+    
+    
+    
+   
 }
 
 

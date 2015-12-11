@@ -2,9 +2,9 @@
 class loginValidation{ 
 
   
-    public $link;
-    public $host, $user,$ps,$db;
-    public $username, $password, $sql,$login, $data, $rows;
+    private $link;
+    private $host, $user,$ps,$db;
+    private $username, $password, $sql,$login, $data, $rows;
     
     
     
@@ -24,7 +24,7 @@ class loginValidation{
     }
     
     public function evaluate_queries(){
-        $this -> sql = "select fname,email,password from students where email = '$this->username' and password = '$this->password'";
+        $this -> sql = "select fname,email,password,mobile from students where email = '$this->username' and password = '$this->password'";
         $this -> login = mysql_query($this -> sql) or die("Login Error");
         $this -> rows = mysql_num_rows($this -> login);
         if( !($this -> rows)){
@@ -65,6 +65,15 @@ class loginValidation{
         }else if($this -> rows<=0){
             return "-1";
         }
+    }
+    
+    public function user_mobile(){
+        if( $this -> rows >= 1){
+            return $this -> data[3];
+        }else if($this -> rows<=0){
+            return "-1";
+        }
+        
     }
     
    

@@ -104,9 +104,11 @@
             if(($user == $log -> user_ID())&& ($pass == $log -> user_password())){
                 $session_name = "userName";
                 $session_value = $log -> user_name();
+                $mobile_number = $log -> user_mobile();
                 
                 $_SESSION[$session_name]= $session_value;
                 $_SESSION["email"] = $user;
+                $_SESSION["mobile"] = $mobile_number;
                 
     ?>
                 <script>

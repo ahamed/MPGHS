@@ -182,7 +182,7 @@
 
                                     <dd>
                                         <div class="form-group">
-                                            <button type="submit" name="upload" class="form-control btn btn-success" id="up"><span class="fa fa-paper-plane-o"></span> Create the account</button>
+                                            <button type="submit" name="update" class="form-control btn btn-success" id="up"><span class="fa fa-paper-plane-o"></span> Create the account</button>
                                         </div>
                                     </dd>
                                 </dl>
@@ -233,7 +233,7 @@
     include "../resourses/signupinsert.php";
        // public $fname='',$lname='',$bdate='',$sex='',$blood='',$mobile='',$email='',$pass='', $year='',$uni='',$job='';
         
-    if ( isset($_POST['upload'])){
+    if ( isset($_POST['update'])){
                
         
         if(isset($_POST['fname'])){
@@ -274,9 +274,8 @@
             }
 
         $signup = new signup($fname, $lname, $bdate, $sex, $blood, $mobile,$email, $pass, $year, $uni, $job);
-            //$signup = new signup('sajeeb','ahamed','12/2/2012','Male','AB+','234','sa@je.eb','321','2009','jnu','st');
-           // $signup = new signup();
-        //$signup -> insert_into_students();
+        $signup -> insert_into_students();
+            
         }
     
     ?>

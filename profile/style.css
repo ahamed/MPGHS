@@ -1,0 +1,19 @@
+select {
+    font-family: Fontawesome;
+}
+
+.fa-asterisk {
+    color: red;
+}
+
+.edit-picture {
+    position: absolute;
+    top: 10px;
+    left: 365px;
+}
+
+#img_avater {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+}
