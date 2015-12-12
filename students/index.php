@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="../css/bootstrap-social.css">
     <link rel="stylesheet" href="../css/loading.css">
     <link rel="stylesheet" href="../css/mystyle.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="../bower_components/css/hover-min.css">
 
+    <link rel="stylesheet" href="../bower_components/css/hover-min.css">
+    <link rel="stylesheet" href="style.css">
 
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>

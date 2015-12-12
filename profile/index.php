@@ -145,7 +145,7 @@
 
                                     <br>
 
-                                    <a class="btn btn-link" type="button" role="button">
+                                    <a class="btn btn-link">
                                         <div>
                                             <?php 
                                                 if( $data[3] == "male"){

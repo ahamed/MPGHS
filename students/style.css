@@ -1,7 +1,6 @@
-span {
-    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 20px;
+@font-face {
+    font-family: 'jura';
+    src: url('../Fonts/jura.ttf');
 }
 
 .overflow img {
@@ -13,7 +12,40 @@ span {
     width: 25%;
 }
 
-.thumbnail img {
+.thumbnail .img-holder {
     min-height: 200px;
     height: 200px;
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.caption h4 {
+    color: lemonchiffon;
+    font-family: 'jura';
+    font-weight: bolder;
+}
+
+.caption h3 {
+    color: red;
+}
+
+.thumbnail {
+    background: #660033;
+    min-height: 400px;
+    height: 500px;
+}
+
+.fa-tint {
+    color: red;
+}
+
+.fa-mobile,
+.fa-envelope,
+.fa-university,
+.fa-briefcase,
+.fa-birthday-cake,
+.glyphicon-education {
+    color: blueviolet;
 }

@@ -62,6 +62,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="../profile/"><span class="fa fa-cogs"></span>  Profile</a></li>
+                                <li><a href="../notification/"><span class="fa fa-bell"></span>  Notificationa</a></li>
                                 <li><a href="../resourses/logout.php"><span class="fa fa-sign-out"></span>  Logout</a></li>
 
                             </ul>
