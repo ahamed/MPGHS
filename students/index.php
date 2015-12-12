@@ -59,8 +59,25 @@
         <!-- end jumbotron header-->
 
 
+        <div class="container-fluid">
+            <div class="row" id="getFixed">
+                <div class="col-sm-6 col-xs-6">
+                    <h1 class="">Formar Students</h1>
+                </div>
+                <div class="col-sm-6 col-xs-6" style="margin-top: 30px;">
+                    <form class="" method="POST" action="#">
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" name="search" id="search" placeholder="Search a student by name or passing year">
+                            <span class="form-control-feedback glyphicon glyphicon-search"></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
 
         <div class="container">
+
             <div class="row row-content" style="display:flex; flex-wrap: wrap;">
 
 
@@ -103,6 +120,26 @@
             <script type="text/javascript" src="../bower_components/jquery/dist/chart.min.js"></script>
             <script type="text/javascript" src="../js/passingGraph.js"></script>
 
+            <script type="text/javascript">
+                jQuery(function($) {
+                    function fixDiv() {
+                        var $cache = $('#getFixed');
+                        if ($(window).scrollTop() > 450)
+                            $cache.css({
+                                'position': 'fixed',
+                                'top': '30px'
+                            });
+                        else
+                            $cache.css({
+                                'position': 'relative',
+                                'top': 'auto'
+                            });
+                    }
+                    $(window).scroll(fixDiv);
+                    fixDiv();
+                });
+
+            </script>
 
 
 </body>

@@ -318,6 +318,9 @@
                     $('[data-toggle="popover"]').hover(function() {
                         $(this).popover();
                     });
+                    $("#notify").click(function() {
+                        $(this).hide();
+                    });
 
                 </script>
 

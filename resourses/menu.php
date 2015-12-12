@@ -42,7 +42,8 @@
 
 
             </ul>
-            <?php 
+            <?php
+            session_start();
                 include "../resourses/checkSession.php";
                 $cookie = new selectionLogin;
                 if(!($cookie -> test())){
@@ -66,6 +67,9 @@
                                 <li><a href="../resourses/logout.php"><span class="fa fa-sign-out"></span>  Logout</a></li>
 
                             </ul>
+                        </li>
+                        <li id="show" style="display: none;">
+                            <a href="../notification/" type="button" id="notify"><span class="label label-success"><?php echo $_SESSION['notify'];?></span></a>
                         </li>
                     </ul>
 

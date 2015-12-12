@@ -24,10 +24,10 @@ class showStudents{
     
     
     public function show(){
-        $sql = "select * from students as s, picture as p where s.mobile = p.id order by fname ASC";
+        $sql = "select * from students as s, picture as p where s.mobile = p.id order by passing_year DESC";
         $getValues = mysql_query($sql);
         while($data = mysql_fetch_array($getValues)){
-            if($data[11] > 0){
+            if($data[11] > 3){
             ?>
 
     <div class="col-xs-12 col-sm-4">

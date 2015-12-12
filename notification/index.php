@@ -44,12 +44,16 @@
 
                     <form class="" method="POST" action="#">
                         <?php
+                        session_start();
                     include "../resourses/init.php";
+                        $notification = 'notify';
                     $table = "noti".$_SESSION['mobile'];
                     $inc = 0;
                     $getNotification = mysql_query("select * from {$table}");
                     
-
+                    $rows = mysql_num_rows($getNotification);
+                        if($rows > 0){
+                            $_SESSION[$notification] = $rows;
                     while($data = mysql_fetch_array($getNotification)){
                         $getNamePic = mysql_fetch_array(mysql_query("select * from students as s, picture as p, {$table} as n where s.mobile = p.id and s.mobile = n.whosends and n.whosends = '{$data[0]}'")); 
                         
@@ -79,6 +83,9 @@
                       
                         
                     }
+                        }else{
+                            echo "<h1>There are no approval request for you.</h1>";
+                        }
                    
                     
                     
@@ -91,6 +98,14 @@
         <script src="../bower_components/jquery/dist/jquery.min.js"></script>
         <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+        <script>
+            $(document).ready(function() {
+                $("#notify").click(function() {
+                    $(this).hide();
+                });
+            });
+
+        </script>
 
 
 </body>
