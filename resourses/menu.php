@@ -17,8 +17,8 @@
 
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li><a id="home" href="../home/"><i class="fa fa-home"></i> Home</a></li>
-                <li><a id="pref" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="fa fa-bars"></i> Preference <span class="caret"></span></a>
+                <li id="home"><a href="../home/"><i class="fa fa-home"></i> Home</a></li>
+                <li id="pref"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="fa fa-bars"></i> Preference <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li id="rar"><a href="#">Rules &amp; Regulations</a></li>
                         <li id="mb"><a href="#">Managing Board</a></li>
@@ -37,8 +37,8 @@
                     </ul>
 
                 </li>
-                <li class=""><a id="gas" href="#"><span class="glyphicon glyphicon-screenshot"></span> Game and Sports</a></li>
-                <li class="" id="bb"><a id="blood" href="#"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
+                <li id="game"><a href="../game-and-sport/"><span class="glyphicon glyphicon-screenshot"></span> Game and Sports</a></li>
+                <li class="" id="bb"><a id="blood" href="../blood-bank/"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
 
 
             </ul>

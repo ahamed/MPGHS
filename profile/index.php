@@ -76,54 +76,7 @@
                             <div class="media-body">
                                 <button class="btn btn-link pull-right edit" type="button" id="<?php echo $data[5];?>" data-toggle="modal" data-target="#m<?php echo $data[5];?>" data-toggle="tooltip" data-placement="right" title="Edit Account Information"><span class="fa fa-pencil fa-2x"></span></button>
 
-                                <!--<dl class="dl-horizontal">
-                                    <dt><h4 class="control-label">Name : </h4></dt>
-                                    <dd>
-                                        <h4 class=""><?php echo $data[0]." ".$data[1];?></h4>
-                                    </dd>
 
-                                    <dt><h4>Birth Date :</dt>
-                                    <dd>
-                                        <h4 id="bdate"><?php echo $data[2];?></h4>
-                                    </dd>
-
-
-                                    <dt><h4>Sex : </h4> </dt>
-                                    <dd>
-                                        <h4 id="sex"><?php echo $data[3];?></h4>
-                                    </dd>
-
-                                    <dt><h4>Blood Group : </h4></dt>
-                                    <dd>
-                                        <h4 id="blood"><?php echo $data[4];?></h4>
-                                    </dd>
-
-                                    <dt><h4>Mobile : </h4></dt>
-                                    <dd>
-                                        <h4 id="mobile"><?php echo "+880 ".$data[5];?></h4>
-                                    </dd>
-
-                                    <dt><h4>Email : </h4></dt>
-                                    <dd>
-                                        <h4 id="email"><?php echo $data[6];?></h4>
-                                    </dd>
-
-
-                                    <dt><h4>Passing Year : </h4></dt>
-                                    <dd>
-                                        <h4 id="year"><?php echo $data[8];?></h4>
-                                    </dd>
-
-                                    <dt><h4>Graduated From : </h4></dt>
-                                    <dd>
-                                        <h4 id="uni"><?php echo $data[9];?></h4>
-                                    </dd>
-
-                                    <dt><h4>Job : </h4></dt>
-                                    <dd>
-                                        <h4 id="job"><?php echo $data[10];?></h4>
-                                    </dd>
-                                </dl>-->
 
 
                                 <div class="pull-left info">

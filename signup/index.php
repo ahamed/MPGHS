@@ -160,7 +160,7 @@
                                     </dd>
 
                                     <dt>
-                                        <label for="graduation">Graduation From : </label>
+                                        <label for="graduation">University/College : </label>
                                     </dt>
                                     <dd>
                                         <div class="form-group has-feedback has-success">

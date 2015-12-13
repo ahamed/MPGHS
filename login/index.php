@@ -54,7 +54,7 @@
                                 <img src="../images/logo.png" class="img-circle" height="100" width="100">
                                 <div class="form-group" id="not-matched-alert">
                                     <div class="alert alert-danger alert-dismissable" role="alert">
-                                        <button class="close" type="button" id="close" aria-label="close"><i id="close-alert" class="fa fa-close" aria-hidden="true"></i></button> Password Not Matched!</div>
+                                        <button class="close" type="button" id="close" aria-label="close"><i id="close-alert" class="fa fa-close" aria-hidden="true"></i></button>Email and Password Not Matched!</div>
 
 
                                 </div>

@@ -84,7 +84,16 @@
                         
                     }
                         }else{
-                            echo "<h1>There are no approval request for you.</h1>";
+                            ?>
+
+                                <div class="row row-content">
+                                    <div class="col-sm-7 col-xs-12 col-sm-offset-3">
+                                        <h1 style="color:red;">There is no approval request for you</h1>
+                                    </div>
+                                </div>
+
+                                <?php
+                            //echo "<h1>There is no approval request for you.</h1>";
                         }
                    
                     

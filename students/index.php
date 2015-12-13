@@ -103,7 +103,8 @@
 
         </div>
         <!-- end main container-->
-
+        <a class="btn btn-danger scrolltotop" target="_top" style=" width: 100px; display: none; position: fixed; z-index: 999; top: 600px; ">
+            <span class="glyphicon glyphicon-chevron-up fa-2x"></span></a>
 
 
 
@@ -127,7 +128,7 @@
                         if ($(window).scrollTop() > 450)
                             $cache.css({
                                 'position': 'fixed',
-                                'top': '30px'
+                                'top': '40px'
                             });
                         else
                             $cache.css({
@@ -140,6 +141,7 @@
                 });
 
             </script>
+            <script type="text/javascript" src="../js/scrolltop.js"></script>
 
 
 </body>

@@ -147,7 +147,7 @@ function showRightAffix(){
 
 ?>
 <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                                <li role="presentation">Teachers</li>
+                                <li role="presentation"><h4>Teachers</h4></li>
                                 <?php
                             include "../resourses/init.php";
                                 $sql = mysql_query("select * from teachers order by name DESC");

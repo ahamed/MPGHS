@@ -3,6 +3,11 @@
     src: url('../Fonts/jura.ttf');
 }
 
+@font-face {
+    font-family: 'exo2';
+    src: url('../Fonts/exo2.otf');
+}
+
 .overflow img {
     width: 200px;
     height: 100%;
@@ -21,33 +26,37 @@
     text-align: center;
 }
 
-.caption h4 {
-    color: lemonchiffon;
-    font-family: 'jura';
+.caption h4,
+.caption h5 {
+    #color: lemonchiffon;
+    #font-family: 'jura';
     font-weight: bolder;
+    color: black;
 }
 
 .caption h3 {
-    color: red;
+    #color: red;
+    font-family: 'exo2';
 }
 
 .thumbnail {
-    background: #330000;
+    #background: #330000;
     min-height: 400px;
     height: 500px;
+    background: lightgray;
 }
 
 .fa-tint {
-    color: red;
+    color: #ff0000;
 }
 
-.fa-mobile,
-.fa-envelope,
-.fa-university,
-.fa-briefcase,
-.fa-birthday-cake,
-.glyphicon-education {
-    color: blueviolet;
+.caption .fa-mobile,
+.caption .fa-envelope,
+.caption .fa-university,
+.caption .fa-briefcase,
+.caption .fa-birthday-cake,
+.caption .glyphicon-education {
+    color: brown;
 }
 
 #getFixed {
@@ -59,4 +68,9 @@
 
 #getFixed h1 {
     color: antiquewhite;
+}
+
+.scrolltotop {
+    width: 20px;
+    height: 40px;
 }

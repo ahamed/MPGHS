@@ -44,34 +44,34 @@ class showStudents{
                     <h3><?php echo $data[0]." ".$data[1];?></h3>
                 </div>
                 <div>
-                    <h4><span class="fa fa-birthday-cake"></span> <?php echo date('F j, Y',strtotime($data[2]));?></h4>
+                    <h5><span class="fa fa-birthday-cake"></span> <?php echo date('F j, Y',strtotime($data[2]));?></h5>
                 </div>
 
                 <div class="">
 
-                    <h4><span class="fa fa-tint"></span> <?php echo $data[4];?></h4>
+                    <h5><span class="fa fa-tint fa-2x"></span> <?php echo $data[4];?></h5>
                 </div>
 
                 <div class="">
-                    <h4><span class="fa fa-mobile"></span> <?php echo $data[5];?></h4>
-                </div>
-
-                <div class="">
-
-                    <h4><span class="fa fa-envelope"></span> <?php echo $data[6];?></h4>
-                </div>
-                <div class="">
-
-                    <h4><span class="glyphicon glyphicon-education"></span> <?php echo $data[8];?></h4>
-                </div>
-                <div class="">
-
-                    <h4><span class="fa fa-university"></span> <?php echo $data[9];?></h4>
+                    <h5><span class="fa fa-mobile fa-2x"></span> <?php echo $data[5];?></h5>
                 </div>
 
                 <div class="">
 
-                    <h4><span class="fa fa-briefcase"></span> <?php echo $data[10];?></h4>
+                    <h5><span class="fa fa-envelope"></span> <?php echo $data[6];?></h5>
+                </div>
+                <div class="">
+
+                    <h5><span class="glyphicon glyphicon-education"></span> <?php echo $data[8];?></h5>
+                </div>
+                <div class="">
+
+                    <h5><span class="fa fa-university"></span> <?php echo $data[9];?></h5>
+                </div>
+
+                <div class="">
+
+                    <h5><span class="fa fa-briefcase"></span> <?php echo $data[10];?></h5>
                 </div>
 
             </div>

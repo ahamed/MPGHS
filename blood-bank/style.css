@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'exo2';
+    src: url("../Fonts/exo2.otf");
+}
+
+.fa-tint {
+    color: red;
+}
+
+.header-title strong {
+    font-weight: bolder;
+    font-size: 100px;
+    color: red;
+}
+
+.bl-select {
+    height: 400px;
+    #background: rgba(223, 123, 20, .4);
+    background: darkred;
+    background-image: url("../images/blood.png");
+    background-repeat: no-repeat;
+}
+
+.well strong {
+    color: red;
+}
+
+.caption h3 {
+    font-family: 'exo2';
+    font-size: 30px;
+}
+
+.caption h5 {
+    color: black;
+}
+
+.caption {
+    height: 200px;
+}
+
+#mobile {
+    color: green;
+}
+
+#email {
+    color: purple;
+}
+
+.fa-quote-left,
+.fa-quote-right {
+    font-size: 10px;
+    position: absolute;
+    top: 37px;
+}
+
+.fa-quote-left {
+    left: 50px;
+}
+
+.b-n-f strong {
+    color: red;
+}
+
+.d {
+    color: green;
+}
