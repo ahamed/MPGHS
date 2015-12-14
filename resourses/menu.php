@@ -46,7 +46,8 @@
             session_start();
                 include "../resourses/checkSession.php";
                 $cookie = new selectionLogin;
-                if(!($cookie -> test())){
+                
+                if(!$cookie -> check_session() && !$cookie -> check_cookie()){
                     ?>
                 <ul class="nav navbar-nav navbar-right" id="right-ul">
                     <li data-toggle="tooltip" data-target="focus" data-placement="bottom" title="If you are a formar student of MPGHS then login here." id="lin"><a href="../login/" id="login"><i class="fa fa-sign-in"></i> Login here</a></li>
@@ -54,11 +55,20 @@
 
                 <?php
                 }else{
+                    
+                    if( $cookie -> check_cookie()){
+                        $name = $_COOKIE['user_email'];
+                    }
+                    
+                    if( $cookie -> check_session()){
+                        $name = $_SESSION['userName'];
+                    }
+                    
                     ?>
 
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#" id="login" class="dropdown-toggle" data-toggle="dropdown" aria-haspop="true" aria-expanden="false" role="button"><i class="fa fa-user"></i> HELLO,  <?php echo strtoupper($_SESSION['userName']);?> <span class="caret"></span>
+                            <a href="#" id="login" class="dropdown-toggle" data-toggle="dropdown" aria-haspop="true" aria-expanden="false" role="button"><i class="fa fa-user"></i> HELLO,  <?php echo strtoupper($name);?> <span class="caret"></span>
                                 
                             </a>
                             <ul class="dropdown-menu">

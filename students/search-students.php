@@ -84,12 +84,9 @@
 
 
                 <?php 
-                include "../resourses/show_students.php";
-                $show = new showStudents;
-                $show -> show();
-                
-                
-                
+                include "../resourses/show_search_result.php";
+                $show_result = new searchSt;
+                $show_result -> search();
                 ?>
 
 

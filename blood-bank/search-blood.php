@@ -40,8 +40,9 @@
 
                 <?php include "../resourses/init.php"; 
                 $blood_gp=$_POST[ 'blood-grp']; 
-                $getinfo_bl=mysql_query( "select * from students where blood = '{$blood_gp}'"); 
+                $getinfo_bl=mysql_query( "select * from students where blood = '{$blood_gp}' and varification >= 4"); 
                 $num_of_rows=mysql_num_rows($getinfo_bl);
+                
                 if($num_of_rows <=0 ){
                     ?>
                     <div class="col-sm-4 col-xs-12 col-sm-offset-4 b-n-f">
@@ -73,6 +74,8 @@
                         <?php 
     }
     }
+                
+                
     ?>
 
 

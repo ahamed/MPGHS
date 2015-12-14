@@ -48,9 +48,7 @@
 
 .fa-quote-left,
 .fa-quote-right {
-    font-size: 10px;
-    position: absolute;
-    top: 37px;
+    color: gray;
 }
 
 .fa-quote-left {

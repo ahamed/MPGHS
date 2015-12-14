@@ -33,7 +33,7 @@
         </script>
         <div class="container">
             <div class="row header-title">
-                <div class="col-sm-6 col-xs-12">
+                <div class="col-sm-12 col-xs-12">
                     <h1><span class="fa fa-tint fa-3x"></span> <strong>S</strong>earching for <strong>B</strong>lood<strong>?</strong></h1>
                 </div>
 
@@ -61,20 +61,20 @@
                 <div class="col-sm-6 col-xs-12">
                     <div class="well">
                         <blockquote>
-                            <h4><span class="fa fa-quote-left"></span><span class="d">D</span>onate <strong>B</strong>lood. Your <strong>B</strong>lood may be a life.<span class="fa fa-quote-right"></span></h4>
+                            <h4><span class="fa fa-quote-left"> </span><span class="d"> D</span>onate <strong>B</strong>lood. Your <strong>B</strong>lood may be a life. <span class="fa fa-quote-right"> </span></h4>
                             <footer>
                                 <cite title="source">Your <strong>B</strong>lood is replaced or recreated every 4 months.</cite>
                             </footer>
                         </blockquote>
                         <blockquote>
-                            <h4>You don't need to be a doctor to save a life. Just <span class="d">D</span>onate <strong>B</strong>lood</h4>
+                            <h4><span class="fa fa-quote-left"> </span> You don't need to be a doctor to save a life. Just <span class="d">D</span>onate <strong>B</strong>lood <span class="fa fa-quote-right"> </span></h4>
                             <footer>
                                 <cite title="source"><strong>B</strong>lood donation is the greatest work in the world.</cite>
                             </footer>
 
                         </blockquote>
                         <blockquote>
-                            <h4>A few drops of your <strong>B</strong>lood can help a life to bloom.</h4>
+                            <h4><span class="fa fa-quote-left"> </span> A few drops of your <strong>B</strong>lood can help a life to bloom. <span class="fa fa-quote-right"> </span></h4>
                             <footer>
                                 <cite title="source"><span class="d">D</span>onate <strong>B</strong>lood for tomorrow.</cite>
                             </footer>

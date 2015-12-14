@@ -90,9 +90,11 @@
 
 
             <?php 
+    setcookie("user_email", "off", (time()+86400), '/');
     session_start();
         include "../resourses/loginValidation.php";
-        if( isset( $_POST['login'])){
+        
+    if( isset( $_POST['login'])){
             if( isset($_POST['email'])){
                 $user = $_POST['email'];
             }    
@@ -101,7 +103,7 @@
             }
             $log = new loginValidation($user,$pass);
            
-            if(($user == $log -> user_ID())&& ($pass == $log -> user_password())){
+            
                 $session_name = "userName";
                 $session_value = $log -> user_name();
                 $mobile_number = $log -> user_mobile();
@@ -110,29 +112,52 @@
                 $_SESSION["email"] = $user;
                 $_SESSION["mobile"] = $mobile_number;
                 
-    ?>
+              if(($user == $log -> user_ID())&& ($pass == $log -> user_password())){
+                  
+                if(isset($_POST["remember"])){
+                    ?>
+
                 <script>
-                    window.location = "../home/";
+                    window.location.href = "../resourses/create_cookies.php?name=<?php echo $session_value;?>";
 
                 </script>
+
                 <?php
-            }else{
-                ?>
+                    
+                }else{
+                    ?>
                     <script>
-                        $("#not-matched-alert").slideDown("slow");
-                        $("#close").click(function() {
-                            $("#not-matched-alert").slideUp("slow");
-                        });
+                        alert("Cookies not set");
 
                     </script>
-                    <?php 
+
+                    <?php
+                    
+                }
+                
+    ?>
+                        <script>
+                            window.location = "../home/";
+
+                        </script>
+                        <?php
+            }else{
+                ?>
+                            <script>
+                                $("#not-matched-alert").slideDown("slow");
+                                $("#close").click(function() {
+                                    $("#not-matched-alert").slideUp("slow");
+                                });
+
+                            </script>
+                            <?php 
             }   
         }
     ?>
-                        <script>
-                            $("li[data-toggle='popover']").popover();
+                                <script>
+                                    $("li[data-toggle='popover']").popover();
 
-                        </script>
+                                </script>
 </body>
 
 </html>
