@@ -363,7 +363,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button class="close" type="button" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Upload Image</h4>
+                                <h4 class="modal-title">Upload Image (Size not more than 1MB)</h4>
                             </div>
                             <div class="modal-body">
                                 <form action="#" method="POST" enctype="multipart/form-data">

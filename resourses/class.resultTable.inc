@@ -3,7 +3,7 @@ class resultTable{
 
 function showTable(){
     ?>
-     <table class="table table-striped table-hover table-bordered">
+     <table class="table table-striped table-hover table-bordered" id="data">
 
 
                                                     <?php 

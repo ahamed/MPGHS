@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'exo2';
+    src: url("../Fonts/exo2.otf");
+}
+
+.my-nav {
+    position: fixed;
+    top: 300px;
+}
+
+#getFixed {
+    height: 80px;
+    width: 1350px;
+    background: gray;
+    z-index: 999;
+}
+
+#getFixed h1 {
+    color: antiquewhite;
+}
+
+.class-nav > li > a {
+    color: black;
+    font-family: 'exo2';
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.class-nav {
+    position: absolute;
+    left: -450px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    borde-bottom: 1px ridge;
+    min-height: 450px;
+}
+
+dl {
+    text-overflow: ellipsis;
+}

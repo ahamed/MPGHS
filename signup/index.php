@@ -49,7 +49,7 @@
                         </div>
                         <div class="panel-body">
 
-                            <form class="" action="#" method="POST" autocomplete="off">
+                            <form class="" action="#" method="POST" autocomplete="off" id="myForm">
                                 <dl class="dl-horizontal">
                                     <dt>
                                         <label for="fname" class="control-label"><span class="fa fa-asterisk "></span> Name : </label>
@@ -131,7 +131,17 @@
                                     </dt>
                                     <dd data-toggle="tooltip" data-placement="right" id="pass" title="Use a secure password at least 8 charecters">
                                         <div class="form-group has-feedback has-success">
-                                            <input type="password" name="password" id="password" placeholder="Type a secure password al least 8 charecters" class="form-control" pattern=".{8,}">
+                                            <input type="password" name="password" id="password" placeholder="Type a secure password al least 8 charecters" class="form-control" pattern=".{8,}" required>
+                                            <span class="form-control-feedback glyphicon glyphicon-lock"></span>
+                                        </div>
+                                    </dd>
+
+                                    <dt>
+                                        <label for="re_password" class="control-label"><strong class="fa fa-asterisk "></strong>Verify Password : </label>
+                                    </dt>
+                                    <dd data-toggle="tooltip" data-placement="right" id="pass" title="Use a secure password at least 8 charecters">
+                                        <div class="form-group has-feedback has-success">
+                                            <input type="password" name="re_password" id="re_password" placeholder="Varifying your password by retyping the same password again" class="form-control" pattern=".{8,}" required>
                                             <span class="form-control-feedback glyphicon glyphicon-lock"></span>
                                         </div>
                                     </dd>
@@ -198,7 +208,30 @@
         </div>
         <!-- end container class -->
         <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+
         <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+            $("#re_password").change(function() {
+
+                var re_pass = $("#re_password").val();
+                var pass = $("#password").val();
+                if (pass != re_pass) {
+                    $(this).val("");
+                    $("#re_password").css({
+                        'border': '3px solid red'
+                    });
+                } else {
+
+                    $("#re_password").css({
+                        'border': '3px solid green'
+                    });
+                }
+            });
+
+        </script>
+
+
         <?php include "../resourses/footer.php";?>
             <script>
                 $(document).ready(function() {

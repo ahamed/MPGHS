@@ -25,4 +25,11 @@ $students = "CREATE TABLE IF NOT EXISTS students(id INT NOT NULL AUTO_INCREMENT,
 
 $create_table_student = mysql_query($students) or die("Student table not created");
 
+
+$child = "CREATE TABLE IF NOT EXISTS childrens(roll varchar(40) NOT NULL, name varchar(200) NOT NULL, fname varchar(200) NOT NULL, mname varchar(100) NOT NULL, sex varchar(10) NOT NULL, religion varchar(100) NOT NULL, guardian_mobile varchar(20) NOT NULL, class varchar(20) NOT NULL, section varchar(10) NOT NULL, primary key(roll, guardian_mobile))";
+
+$children = mysql_query($child) or die("Children not create".mysql_error());
+
+
+
 ?>

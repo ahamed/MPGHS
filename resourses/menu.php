@@ -20,6 +20,7 @@
                 <li id="home"><a href="../home/"><i class="fa fa-home"></i> Home</a></li>
                 <li id="pref"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="fa fa-bars"></i> Preference <span class="caret"></span></a>
                     <ul class="dropdown-menu">
+                        <li id="classes"><a href="../classes/">Classes</a></li>
                         <li id="rar"><a href="#">Rules &amp; Regulations</a></li>
                         <li id="mb"><a href="#">Managing Board</a></li>
                         <li class="divider" role="separator"></li>

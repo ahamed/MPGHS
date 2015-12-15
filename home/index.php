@@ -22,6 +22,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <script src="../bower_components/jsImgSlider/themes/2/js-image-slider.js"></script>
     <script src="../bower_components/jsImgSlider/flux.min.js"></script>
+    <script src="../js/scrolling-nav.js"></script>
 </head>
 
 <body data-spy="scroll" data-target="#myScrollSpy" data-offset="100">
@@ -219,6 +220,7 @@
 
                         <!-- start location div-->
                         <div class="row" id="location">
+                            <p style="padding-top:20px;"></p>
                             <div class="col-sm-12">
                                 <span class="fa fa-map-marker fa-2x"> Location</span>
                             </div>
@@ -247,10 +249,10 @@
 
                         <nav class="col-sm-2 hidden-xs" id="myScrollSpy">
                             <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                                <li><a href="#history">History</a></li>
-                                <li><a href="#achivements">Annual Report</a></li>
-                                <li><a href="#uniform">Uniform</a></li>
-                                <li><a href="#location">Location</a></li>
+                                <li><a href="#history" class="page-scroll" id="his">History</a></li>
+                                <li><a href="#achivements" id="achi" class="page-scroll">Annual Report</a></li>
+                                <li><a href="#uniform" id="uni" class="page-scroll">Uniform</a></li>
+                                <li><a href="#location" id="loc" class="page-scroll">Location</a></li>
 
                             </ul>
                         </nav>
