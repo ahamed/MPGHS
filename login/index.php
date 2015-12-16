@@ -118,7 +118,7 @@
                     ?>
 
                 <script>
-                    window.location.href = "../resourses/create_cookies.php?name=<?php echo $session_value;?>";
+                    window.location.href = "../resourses/create_cookies.php?email=<?php echo $user;?>&name=<?php echo $session_value;?>";
 
                 </script>
 

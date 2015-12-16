@@ -58,10 +58,10 @@
                 }else{
                     
                     if( $cookie -> check_cookie()){
-                        $name = $_COOKIE['user_email'];
+                        $name = $_COOKIE['user_name'];
                     }
                     
-                    if( $cookie -> check_session()){
+                    else if( $cookie -> check_session()){
                         $name = $_SESSION['userName'];
                     }
                     

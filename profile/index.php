@@ -42,10 +42,12 @@
             <?php
             session_start();
                 include "../resourses/init.php";
-                if(isset($_SESSION["email"])){
-                    $email = $_SESSION["email"];    
-                }else{
-                    $email = "";
+                
+                if(isset($_COOKIE["user_email"])){
+                    $email = $_COOKIE["user_email"];
+                }else if(isset($_SESSION["email"]) ){
+                    $email = $_SESSION["email"];  
+                    //$email_cookie = $_COOKIE["user_email"];
                 }
             
                 $sql = mysql_query("select * from students where email = '$email'") or die("err"+mysql_error());

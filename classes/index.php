@@ -36,10 +36,10 @@
 
         <div class="container-fluid">
             <div class="row" id="getFixed">
-                <div class="col-sm-6 col-xs-6">
+                <div class="col-sm-6 col-xs-12">
                     <h1 class="">Classes</h1>
                 </div>
-                <div class="col-sm-6 col-xs-6" style="margin-top: 30px;">
+                <div class="col-sm-6 col-xs-12" style="margin-top: 30px;">
 
                     <!-- checking nav start here-->
 

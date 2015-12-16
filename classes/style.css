@@ -37,7 +37,3 @@
     borde-bottom: 1px ridge;
     min-height: 450px;
 }
-
-dl {
-    text-overflow: ellipsis;
-}
