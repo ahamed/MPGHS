@@ -107,15 +107,12 @@
         <script src="../bower_components/jquery/dist/jquery.min.js"></script>
         <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <script>
-            $(document).ready(function() {
-                $("#notify").click(function() {
-                    $(this).hide();
-                });
-            });
 
-        </script>
-
+    <?php
+    require "../resourses/showNotification.inc";
+    $noti = new showNotification();
+    $noti -> show();
+    ?>
 
 </body>
 

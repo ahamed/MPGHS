@@ -61,7 +61,7 @@
 
         <div class="container-fluid">
             <div class="row" id="getFixed">
-                <div class="col-sm-6 col-xs-6">
+                <div class="col-sm-6 hidden-xs">
                     <h1 class="">Formar Students</h1>
                 </div>
                 <div class="col-sm-6 col-xs-6" style="margin-top: 30px;">
@@ -91,12 +91,6 @@
                 
                 
                 ?>
-
-
-
-
-
-
 
 
                     <!-- end the whole left part-->
@@ -145,7 +139,11 @@
 
             </script>
             <script type="text/javascript" src="../js/scrolltop.js"></script>
-
+    <?php
+    require "../resourses/showNotification.inc";
+    $noti = new showNotification();
+    $noti -> show();
+    ?>
 
 </body>
 

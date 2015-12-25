@@ -38,7 +38,7 @@
                     </ul>
 
                 </li>
-                <li id="game"><a href="../game-and-sport/"><span class="glyphicon glyphicon-screenshot"></span> Game and Sports</a></li>
+                <li id="game"><a href="../game-and-sport/"><span class="glyphicon glyphicon-screenshot"></span> Sports and Events</a></li>
                 <li class="" id="bb"><a id="blood" href="../blood-bank/"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
 
 
@@ -79,9 +79,7 @@
 
                             </ul>
                         </li>
-                        <li id="show" style="display: none;">
-                            <a href="../notification/" type="button" id="notify"><span class="label label-success"><?php echo $_SESSION['notify'];?></span></a>
-                        </li>
+                        <li id="notific" style="display: none;" class="label label-info"></li>
                     </ul>
 
                     <?php

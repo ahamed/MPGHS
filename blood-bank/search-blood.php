@@ -20,8 +20,6 @@
 
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <script src="../bower_components/jsImgSlider/themes/2/js-image-slider.js"></script>
-    <script src="../bower_components/jsImgSlider/flux.min.js"></script>
 </head>
 
 <body>
@@ -67,10 +65,6 @@
                         </div>
 
 
-
-
-
-
                         <?php 
     }
     }
@@ -90,6 +84,11 @@
 
             <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
             <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <?php
+    require "../resourses/showNotification.inc";
+    $noti = new showNotification();
+    $noti -> show();
+    ?>
 </body>
 
 </html>

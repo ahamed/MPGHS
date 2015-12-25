@@ -40,7 +40,7 @@
                         <h2>Teachers Panel <small>Mohangonj Pilot Govt. High School</small></h2>
 
                         <p style="padding:40px;"></p>
-                        <p>Mohangoj Pilot Govt. High School is a very reputed high school in Netrakona district. She has a great and well trained Teachers panel and ofcourse a nice brillient students.</p>
+                        <p>Mohangoj Pilot Govt. High School is a very reputed high school in Netrakona district. She has a set of great and well trained Teachers and of course a set of nice brilliant students.</p>
                     </div>
                     <div class="col-xs-12 col-sm-4" style="border-left: 1px solid #ddd;">
                         <p style="padding-top: 0px;"></p>
@@ -178,30 +178,12 @@
             <script type="text/javascript" src="../bower_components/jquery/dist/chart.min.js"></script>
             <script type="text/javascript" src="../js/passingGraph.js"></script>
 
-            <script type="text/javascript">
-                $(document).ready(function() {
 
-                    var effect = 'slide';
-
-                    // Set the options for the effect type chosen
-                    var options = {
-                        direction: "Down"
-                    };
-
-                    // Set the duration (default: 400 milliseconds)
-                    var duration = 500;
-
-                    $('#head-master').toggle(effect, options, duration);
-
-
-                    //$("#head-master").animate("slide",{direction: "Down"},1000);
-                    $("#hm-info").delay(1000).animate('slide', {
-                        direction: 'Left'
-                    }, 1000);
-                });
-
-            </script>
-
+    <?php
+    require "../resourses/showNotification.inc";
+    $noti = new showNotification();
+    $noti -> show();
+    ?>
 </body>
 
 </html>

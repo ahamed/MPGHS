@@ -274,3 +274,23 @@ h2 {
 .copyright {
     border-top: 2px solid #ddd;
 }
+
+*{
+    font-family: Fontawesome;
+}
+
+#footer-row dl > dt{
+    color: #f5f5f5;
+}
+#footer-row dl > dd >a{
+    color: #ffffff;
+}
+
+#notific{
+
+    top: 10px;
+    left: -10px;
+}
+.footer-container h3{
+    color: #f5f5f5;
+}

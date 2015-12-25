@@ -63,13 +63,9 @@ class signup{
             if( mysql_query($create_notification_table)){
                 
             }else{
-                ?>
-    <script>
-        alert("table noti not created");
 
-    </script>
-    <?php
-                echo "Table of notification not created";
+
+                echo "<h2>Table of notification not created</h2>";
             }
             
             /*Send request for approval*/
@@ -78,6 +74,17 @@ class signup{
             while($yr = mysql_fetch_array($retrive_yr)){
                 $tab = "noti".$yr[0];
                 $ins = mysql_query("insert into {$tab} values ('{$this->mobile}')");
+            }
+
+            $retrive_mobile = mysql_query("select mobile from students where passing_year = '{$this->passing}'");
+            while( $data = mysql_fetch_array($retrive_mobile)){
+                $table = "noti".$this->mobile;
+                $insert = mysql_query("insert into {$table} values ('{$data[0]}')");
+                if( $insert){
+
+                }else{
+                    echo "<h1>Error occurs</h1>";
+                }
             }
             
             

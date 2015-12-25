@@ -1,24 +1,31 @@
 <footer class="row-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6 col-sm-3 ">
-                <h5>Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#history">Home</a></li>
-                    <li><a href="aboutus.html">About</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="contactus.html">Contact</a></li>
-                </ul>
+    <div class="container footer-container" >
+        <div class="row" id="footer-row">
+            <div class="col-xs-6 col-sm-4 ">
+                <h3>Design and Development</h3>
+
+                <dl class="dl-horizontal">
+                    <dt>UI/UX Designer : </dt>
+                    <dd><a href="https://www.facebook.com/ahamed.sajeeb.sisylana" target="_blank">Sajeeb Ahamed</a></dd>
+
+                    <dt>Logo Designer : </dt>
+                    <dd><a href="https://www.facebook.com/towkirbappy?fref=ts" target="_blank">Tawkir Ahmed Bappy</a></dd>
+
+                    <dt>Data Collection : </dt>
+                    <dd><a href="https://www.facebook.com/Alex.plobog?fref=ts" target="_blank">Dweep Sarker</a></dd>
+                </dl>
+
+
             </div>
-            <div class="col-xs-6 col-sm-5">
-                <h5>Our Address</h5>
+            <div class="col-xs-6 col-sm-4">
+                <h3>Our Address</h3>
                 <address>
                     Station road<br>
                     Mohangonj Upozilla, Mohangonj<br>
                     Netrakona, Bangladesh<br>
-                   <i class="fa fa-phone"></i>: +852 1234 5678<br>
-                   <i class="fa fa-fax"></i>: +852 8765 4321<br>
-                   <i class="fa fa-envelope"></i>: 
+                   <i class="fa fa-phone"></i> +852 1234 5678<br>
+                   <i class="fa fa-fax"></i> +852 8765 4321<br>
+                   <i class="fa fa-envelope"></i>
                    <a href="mailto:mpghs@scl.gov">mpghs@scl.gov</a>
                </address>
             </div>

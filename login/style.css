@@ -55,3 +55,21 @@ body {
 .panel-body {
     background: rgba(102, 3, 48, 0.1);
 }
+
+.panel-wrapper{
+    background: #660033;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.reg-panel{
+    border-left: 1px solid #dddddd;
+}
+
+#lin{
+    position: absolute;
+    #width: 350px;
+    left: 188px;
+    top: -10px;
+}

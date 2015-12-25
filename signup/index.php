@@ -66,7 +66,7 @@
                                     <dd>
                                         <div class="form-group form-inline has-feedback has-success">
                                             <div class="input-group">
-                                                <input type="date" class="form-control" name="bdate" id="bdate" placeholder="Birth Date (mm/dd/yyyy)" required>
+                                                <input type="date" class="form-control" name="bdate" id="bdate" placeholder="Birth Date (yyyy/mm/dd)" required>
                                                 <div class="input-group-addon" id="ageToShown">0 Years Old</div>
                                             </div>
 
@@ -234,7 +234,7 @@
 
         <?php include "../resourses/footer.php";?>
             <script>
-                $(document).ready(function() {
+
                     $("#bdate").change(function() {
                         var age = 0;
                         var currentDate = new Date();
@@ -245,8 +245,6 @@
                         $("#ageToShown").text(age + " Years Old");
 
                     });
-
-                });
 
             </script>
             <script>

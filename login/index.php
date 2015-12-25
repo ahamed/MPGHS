@@ -42,16 +42,25 @@
         </script>
 
         <div class="container">
-            <div class="row" id="main-login-row">
+            <!--<div class="row" id="main-login-row">
                 <div class="col-xs-12 col-sm-4 col-sm-offset-4">
                     <div class="panel panel-info">
                         <div class="panel-heading">
                             <h2 class="panel-title">Login</h2>
                         </div>
                         <div class="panel-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="row row-content panel-wrapper">
+                <div class="col-sm-8 col-xs-12">
+                    <div class="row row-content">
+                        <div class="col-sm-8 col-sm-offset-1 lin-panel">
                             <form action="#" method="POST">
                                 <!--<p style="padding-bottom: 120px;"></p>-->
-                                <img src="../images/logo.png" class="img-circle" height="100" width="100">
+
                                 <div class="form-group" id="not-matched-alert">
                                     <div class="alert alert-danger alert-dismissable" role="alert">
                                         <button class="close" type="button" id="close" aria-label="close"><i id="close-alert" class="fa fa-close" aria-hidden="true"></i></button>Email and Password Not Matched!</div>
@@ -71,16 +80,40 @@
                                 <hr>
                                 <div class="form-group has-error">
                                     <label for="remember" class="checkbox-inline">
-                                        <input type="checkbox" name="remember" id="remember"> <span> Keep me logged in</span>
+                                        <input type="checkbox" name="remember" id="remember" class=""> <span> Keep me logged in</span>
+                                        <button type="submit" name="login" id="lin" class=" btn btn-warning form-control pull-right"><i class="fa fa-sign-in"></i> Login</button>
                                     </label>
-                                    <a class="btn btn-danger pull-right" href="../signup/"><i class="icon icon-book"></i> Create an account</a>
+
                                 </div>
                                 <p style="padding-bottom: 1px;"></p>
-                                <button type="submit" name="login" id="access" class=" btn btn-info form-control"><i class="fa fa-sign-in"></i> Login</button>
+
+
                             </form>
+
                         </div>
+                        <div class="col-sm-3 col-xs-12 reg-panel">
+                           <!-- <img src="../images/logo.png" class="img-circle" height="100" width="100">-->
+                            <a class="btn btn-link" href="#">
+                                <div class="">
+                                    <h4>Forgot</h4>
+                                    <h6>I've Forgot my Password</h6>
+                                </div>
+                            </a>
+                            <hr>
+                            <a class="btn btn-link" href="../signup/">
+                                <div class="">
+                                    <h4>Register</h4>
+                                    <h6>I don't have any Account</h6>
+                                </div>
+                            </a>
+
+                        </div>
+
                     </div>
+
                 </div>
+
+
             </div>
         </div>
         <?php include "../resourses/footer.php";?>

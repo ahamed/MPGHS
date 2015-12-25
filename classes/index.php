@@ -448,7 +448,11 @@
                 });
 
             </script>
-
+    <?php
+    require "../resourses/showNotification.inc";
+    $noti = new showNotification();
+    $noti -> show();
+    ?>
 
 </body>
 
