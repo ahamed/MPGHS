@@ -24,7 +24,9 @@
                         <li id="rar"><a href="#">Rules &amp; Regulations</a></li>
                         <li id="mb"><a href="#">Managing Board</a></li>
                         <li class="divider" role="separator"></li>
+                        <li id="adm"><a href="#">Admission</a></li>
                         <li id="lb"><a href="#">Librery</a></li>
+
                     </ul>
 
                 </li>

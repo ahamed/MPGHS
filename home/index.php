@@ -10,11 +10,11 @@
 
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/bootstrap-social.css">
     <link rel="stylesheet" href="../css/loading.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" >
     <link rel="stylesheet" href="../bower_components/jsImgSlider/themes/2/js-image-slider.css">
+    <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/mystyle.css">
     <link rel="stylesheet" media="mediatype and|not|only (min-width:800px)" href="style.css">
 

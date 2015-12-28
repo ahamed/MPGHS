@@ -1,18 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+
+<body>
+<div id="container"></div>
+<button type="button" id="add" onclick="addOption()">Add a statement</button>
+
 <?php
 
-$day = 1;
-$mon = 1;
-$yer = 2015;
-$sum = 0;
-$days = 0;
-$month_day = array(31,28,31,30,31,30,31,31,30,31,30,31);
-for ( $i = 0; $i < $mon; $i++){
-    $sum += $month_day[$i];
+$que = mysql_query("SELECT name FROM Statements") or die(mysql_error());
+
+$script = "<script>function addOption(){";
+$script .= "var container = document.getElementById('container');";
+$script .= "var select = document.createElement('select');";
+while($data = mysql_fetch_array($que)){
+$script .= "var option = document.createElement('option');";
+  $script .= "option.innerHTML = '$data[0]';";
+  $script .= "select.appendChild(option);";
 }
-
-$days = $sum - ($month_day[$mon-1] - $day);
-echo "$days";
-
-
-
+$script .= "container.appendChild(select);";
+$script .= "}</script>";
+echo $script;
 ?>
+
+
+
+</body>
+
+</html>
