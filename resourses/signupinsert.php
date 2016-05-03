@@ -76,6 +76,9 @@ class signup{
                 $ins = mysql_query("insert into {$tab} values ('{$this->mobile}')");
             }
 
+            // this while lopp sends the user's mobile number to all other tables whos passing year is same.
+
+
             $retrive_mobile = mysql_query("select mobile from students where passing_year = '{$this->passing}'");
             while( $data = mysql_fetch_array($retrive_mobile)){
                 $table = "noti".$this->mobile;
@@ -86,12 +89,13 @@ class signup{
                     echo "<h1>Error occurs</h1>";
                 }
             }
+
+            // this while loop insert into user's table the all mobile numbers of same passing year.
             
             
            ?>
         <script>
             window.location.href = "../profile/";
-
         </script>
 
 
@@ -161,7 +165,6 @@ class signup{
             ?>
                     <script>
                         window.location.href = "../profile/";
-
                     </script>
 
                     <?php 

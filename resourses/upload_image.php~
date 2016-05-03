@@ -74,19 +74,19 @@ $target_file =$target_dir.basename($_FILES['avater']['name']);
         $uploadOk = 0;
         echo "<h3>Sorry, only JPG, JPEG, PNG & GIF files are allowed.</h3>";
     }
-    if($uploadOk===0){
+    if($uploadOk==0){
         
         header("Location: ../profile/");
         echo "<h3>sorry file was not upload</h3>";
 
     }else{
-        //rename($target_file,"my_name".$imageFileType);
+        rename($target_file,"my_name".$imageFileType);
         if(move_uploaded_file($_FILES['avater']['tmp_name'],$target_file)){
 
 
             header("Location: ../profile/");
         }else{
-            echo "<h2>Sorry, there was an error uploading your file</h2>";
+            echo "Sorry, there was an error uploading your file";
             header("Location: ../profile/");
         }
     }

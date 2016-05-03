@@ -28,7 +28,6 @@
 
 <body>
 
-
     <?php include "../resourses/menu.php";?>
         <script>
             var parent = document.getElementById("right-ul");
@@ -250,7 +249,7 @@
                                                     <option id="B+" value="B+">B+</option>
                                                     <option id="B-" value="B-">B-</option>
                                                     <option id="AB+" value="AB+">AB+</option>
-                                    root                <option id="AB-" value="AB-">AB-</option>
+                                                    <option id="AB-" value="AB-">AB-</option>
                                                     <option id="O+" value="O+">O+</option>
                                                     <option id="O-" value="O-">O-</option>
                                                     <script>
@@ -400,19 +399,17 @@
 
 
 
-        <?php include "../resourses/footer.php";?> 
-    
-            <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <?php include "../resourses/footer.php";?>
+            <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+            <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-            <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-           <!-- <script>
+            <script>
                 $(".edit").tooltip();
                 //$("#pop").click(function() {
                 $('[data-toggle="popover"]').popover();
                 //});
 
-            </script>-->
+            </script>
 
 
             <!--preview image script -->
@@ -493,10 +490,10 @@
     
     ?>
 
-    <?php
-        include "../resourses/upload_image.php";
+                    <?php
+         include "../resourses/upload_image.php";
         if( isset($_POST['upload'])){
-            $obj = new up();
+            $obj = new up;
             
         }
     ?>
