@@ -9,10 +9,10 @@
                     <dd><a href="https://www.facebook.com/ahamed.sajeeb.sisylana" target="_blank">Sajeeb Ahamed</a></dd>
 
                     <dt>Logo Designer : </dt>
-                    <dd><a href="https://www.facebook.com/towkirbappy?fref=ts" target="_blank">Tawkir Ahmed Bappy</a></dd>
+                    <dd><a href="https://www.facebook.com/ahamed.sajeeb.sisylana" target="_blank">Sajeeb ahamed</a></dd>
 
                     <dt>Data Collection : </dt>
-                    <dd><a href="https://www.facebook.com/Alex.plobog?fref=ts" target="_blank">Dweep Sarker</a></dd>
+                    <dd><a href="https://www.facebook.com/Alex.plobog?fref=ts" target="_blank">Shahadat Hossain Sohag</a></dd>
                 </dl>
 
 
@@ -46,8 +46,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 copyright">
                     <p style="padding:10px;"></p>
-                    <h5 align=left style="float: left">Copyright &copy; 2016 Sajeeb Ahamed</h5>
-                    <h6 align="right" style="float : right; color : red;">Coded by <a href="#"><strong>Sajeeb Ahamed</strong></a></h6>
+                    <h5 align=left style="float: left">Copyright <span style="color: red;">&copy;</span> 2016 Sajeeb Ahamed</h5>
+                    <h6 align="right" style="float : right; color : red;">Coded by <a href="#"><strong>Sajeeb Ahamed &amp; Shahadat hossain sohag</strong></a></h6>
                 </div>
             </div>
 

@@ -41,3 +41,7 @@
 h3 > small{
     color: #ff0000;
 }
+
+tr{
+    cursor: pointer;
+}

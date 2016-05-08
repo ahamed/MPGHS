@@ -20,12 +20,12 @@
                 <li id="home"><a href="../home/"><i class="fa fa-home"></i> Home</a></li>
                 <li id="pref"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="fa fa-bars"></i> Preference <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li id="classes"><a href="../classes/">Classes</a></li>
-                        <li id="rar"><a href="#">Rules &amp; Regulations</a></li>
-                        <li id="mb"><a href="#">Managing Board</a></li>
+                        
+                        <li id="rar"><a href="../rules-and-regulations/">Rules &amp; Regulations</a></li>
+                        <li id="mb"><a href="../managing-board/">Managing Board</a></li>
                         <li class="divider" role="separator"></li>
                         <li id="adm"><a href="#">Admission</a></li>
-                        <li id="lb"><a href="#">Librery</a></li>
+                        <li id="lb"><a href="#">Library</a></li>
 
                     </ul>
 
@@ -36,6 +36,7 @@
                             <a href="../teachers/"><i class="fa fa-tree"></i> Teachers</a>
                         </li>
                         <li><a href="../students/"><i class="fa fa-leaf"></i> Students</a></li>
+                        <li id="classes"><a href="../classes/"><i class="fa fa-leaf"> Classes</i></a></li>
 
                     </ul>
 

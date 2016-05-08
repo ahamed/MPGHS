@@ -143,11 +143,11 @@ function showTable(){
 <?php
 }
 
-function showRightAffix(){
+function showRightAffix($option){
 
 ?>
 <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="400">
-                                <li role="presentation"><h4>Teachers</h4></li>
+                                <li role="presentation"><h4><?php echo "{$option}"?></h4></li>
                                 <?php
                             include "../resourses/init.php";
                                 $sql = mysql_query("select * from teachers order by name DESC");

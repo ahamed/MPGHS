@@ -29,7 +29,7 @@
     <?php include "../resourses/menu.php"; ?>
 
         <script type="text/javascript">
-            var d = document.getElementById("pref");
+            var d = document.getElementById("tsc");
             d.className = "active";
 
         </script>
@@ -94,7 +94,7 @@
                            // $table = new resultTable;
                         //    $table -> showTable();
                                         $table = new child;
-                                        $table -> show("six","A");
+                                        $table -> show("six","padma");
                         ?>
 
                                     </div>
@@ -106,7 +106,7 @@
                                         <?php 
                             
                                         $table = new child;
-                                        $table -> show("six","B");
+                                        $table -> show("six","meghna");
                         ?>
 
                                     </div>
