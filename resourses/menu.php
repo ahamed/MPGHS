@@ -27,7 +27,7 @@
                     </ul>
 
                 </li>
-                <li data-toggle="tooltip" data-placement="top" title="Teachers and Students Center" id="tsc"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href=""><span class="fa fa-university"></span> TSC <i class="caret"></i></a>
+                <li data-toggle="tooltip" data-placement="top" title="Teachers and Students Center" id="tsc"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href=""> TSC <i class="caret"></i></a>
                     <ul class="dropdown-menu">
                         <li>
                             <a href="../teachers/"><i class="fa fa-tree"></i> Teachers</a>
@@ -38,7 +38,7 @@
                     </ul>
 
                 </li>
-                <li id="game"><a href="../game-and-sport/"><span class="glyphicon glyphicon-screenshot"></span> Sports and Events</a></li>
+                <li id="game"><a href="../game-and-sport/"> Sports and Events</a></li>
                 <li class="" id="bb"><a id="blood" href="../blood-bank/"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
                 <li id="adm"><a href="../admission/">Admission</a></li>
                 <li id="lb"><a href="../library/">Library</a></li>
