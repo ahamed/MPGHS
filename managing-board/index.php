@@ -37,9 +37,9 @@
             <div class="container">
                 <div class="row row-header">
                     <div class="col-xs-12 col-sm-8">
-                        <h2>Managing Commette <small>Mohangonj Pilot Govt. High School</small></h2>
+                        <h2>Managing Committee <small>Mohangonj Pilot Govt. High School</small></h2>
 
-                        <p style="padding:40px;"></p>
+                        <p style="padding:40px;">Our have a nice oriented managing committee. They have been maintaining the total system very effectively and efficiently. </p>
 
                     </div>
                     <div class="col-xs-12 col-sm-4" style="border-left: 1px solid #ddd;">
