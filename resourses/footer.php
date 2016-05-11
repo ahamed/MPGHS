@@ -6,10 +6,10 @@
 
                 <dl class="dl-horizontal">
                     <dt>UI/UX Designer : </dt>
-                    <dd><a href="https://www.facebook.com/ahamed.sajeeb.sisylana" target="_blank">Sajeeb Ahamed</a></dd>
+                    <dd><a href="https://www.facebook.com/ahamed.sajeeb.sisylana" target="_blank">Sajeeb Ahamed &amp; Shahadat Hossain</a></dd>
 
                     <dt>Logo Designer : </dt>
-                    <dd><a href="https://www.facebook.com/ahamed.sajeeb.sisylana" target="_blank">Sajeeb ahamed</a></dd>
+                    <dd><a href="https://www.facebook.com/ahamed.sajeeb.sisylana" target="_blank">Sajeeb ahamed &amp; Shahadat Hossain</a></dd>
 
                     <dt>Data Collection : </dt>
                     <dd><a href="https://www.facebook.com/Alex.plobog?fref=ts" target="_blank">Shahadat Hossain Sohag</a></dd>
@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-12 copyright">
                     <p style="padding:10px;"></p>
-                    <h5 align=left style="float: left">Copyright <span style="color: red;">&copy;</span> 2016 Sajeeb Ahamed</h5>
+                    <h5 align=left style="float: left">Copyright <span style="color: red;">&copy;</span> 2016 Mohangonj Pilot Govt. High School</h5>
                     <h6 align="right" style="float : right; color : red;">Coded by <a href="#"><strong>Sajeeb Ahamed &amp; Shahadat hossain sohag</strong></a></h6>
                 </div>
             </div>

@@ -25,16 +25,16 @@
 
             <!-- carousel inner classs-->
             <div class="carousel-inner" role="listbox">
-                <div class="active item">
+                <!--<div class="active item">
                     <img class="img-responsive" src="../carousel-images/hill-and-desert.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
                     </div>
-                </div>
+                </div>-->
 
-                <div class="item">
-                    <img class="img-responsive" src="../carousel-images/hill-and-sea.jpg">
+                <div class="item active">
+                    <img class="img-responsive" src="../carousel-images/pt.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -45,7 +45,7 @@
 
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/tree-yellow-crope.jpg">
+                    <img class="img-responsive" src="../carousel-images/pt2.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -53,7 +53,7 @@
                 </div>
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/beutiful-grass.jpg">
+                    <img class="img-responsive" src="../carousel-images/cellibration.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -62,34 +62,7 @@
 
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/ice-tree.jpg">
-                    <div class="carousel-caption">
-                        <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
-                        <p style="padding:40px"></p>
-                    </div>
-                </div>
-
-
-
-
-                <div class="item">
-                    <img class="img-responsive" src="../carousel-images/island.jpg">
-                    <div class="carousel-caption">
-                        <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
-                        <p style="padding:40px"></p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive" src="../carousel-images/lake.jpg">
-                    <div class="carousel-caption">
-                        <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
-                        <p style="padding:40px"></p>
-                    </div>
-                </div>
-
-                <div class="item">
-                    <img class="img-responsive" src="../carousel-images/sun-ray.jpg">
+                    <img class="img-responsive" src="../carousel-images/library.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -100,7 +73,7 @@
 
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/sunset.jpg">
+                    <img class="img-responsive" src="../carousel-images/cm.png">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -108,7 +81,7 @@
                 </div>
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/sun-flower.jpg">
+                    <img class="img-responsive" src="../carousel-images/cellibration2.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -116,7 +89,7 @@
                 </div>
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/aurora1.jpg">
+                    <img class="img-responsive" src="../carousel-images/rally.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -127,7 +100,7 @@
 
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/aurora2.jpg">
+                    <img class="img-responsive" src="../carousel-images/xm.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -135,7 +108,7 @@
                 </div>
 
                 <div class="item">
-                    <img class="img-responsive" src="../carousel-images/aurora3.jpg">
+                    <img class="img-responsive" src="../carousel-images/xm2.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
@@ -143,6 +116,33 @@
                 </div>
 
                 <div class="item">
+                    <img class="img-responsive" src="../carousel-images/sports.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
+                        <p style="padding:40px"></p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="item">
+                    <img class="img-responsive" src="../carousel-images/sports2.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
+                        <p style="padding:40px"></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img class="img-responsive" src="../carousel-images/celebration3.jpg">
+                    <div class="carousel-caption">
+                        <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
+                        <p style="padding:40px"></p>
+                    </div>
+                </div>
+
+                <!--<div class="item">
                     <img class="img-responsive" src="../carousel-images/man-alone.jpg">
                     <div class="carousel-caption">
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
@@ -159,7 +159,7 @@
                         <h1 class="media-heading">Mohangonj Pilot Govt. High School</h1>
                         <p style="padding:40px"></p>
                     </div>
-                </div>
+                </div>-->
 
 
             </div>

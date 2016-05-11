@@ -40,8 +40,8 @@
                 </li>
                 <li id="game"><a href="../game-and-sport/"><span class="glyphicon glyphicon-screenshot"></span> Sports and Events</a></li>
                 <li class="" id="bb"><a id="blood" href="../blood-bank/"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
-                <li id="adm"><a href="#">Admission</a></li>
-                <li id="lb"><a href="#">Library</a></li>
+                <li id="adm"><a href="../admission/">Admission</a></li>
+                <li id="lb"><a href="../library/">Library</a></li>
 
 
 
