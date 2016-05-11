@@ -18,15 +18,12 @@
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
                 <li id="home"><a href="../home/"><i class="fa fa-home"></i> Home</a></li>
-                <li id="pref"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="fa fa-bars"></i> Preference <span class="caret"></span></a>
+                <li id="pref"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><i class="fa fa-bars"></i> Administration <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         
                         <li id="rar"><a href="../rules-and-regulations/">Rules &amp; Regulations</a></li>
                         <li id="mb"><a href="../managing-board/">Managing Board</a></li>
-                        <li class="divider" role="separator"></li>
-                        <li id="adm"><a href="#">Admission</a></li>
-                        <li id="lb"><a href="#">Library</a></li>
-
+                        
                     </ul>
 
                 </li>
@@ -43,6 +40,9 @@
                 </li>
                 <li id="game"><a href="../game-and-sport/"><span class="glyphicon glyphicon-screenshot"></span> Sports and Events</a></li>
                 <li class="" id="bb"><a id="blood" href="../blood-bank/"><span class="glyphicon glyphicon-tint"></span>Blood Bank</a></li>
+                <li id="adm"><a href="#">Admission</a></li>
+                <li id="lb"><a href="#">Library</a></li>
+
 
 
             </ul>
